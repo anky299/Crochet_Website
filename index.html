@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Maa's Magic Crochet — Handcrafted Crochet Boutique</title>
+
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Caveat, Alex Brush, Material Symbols Outlined -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Caveat:wght@400..700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN & Design System Tokens Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed-variant": "#743232",
+            "on-primary-fixed": "#3c070a",
+            "surface-variant": "#fedbd2",
+            "tertiary-container": "#966c41",
+            "on-secondary-fixed": "#032104",
+            "inverse-surface": "#402b26",
+            "primary": "#8e4646",
+            "surface": "#fff8f6",
+            "on-surface-variant": "#534342",
+            "primary-fixed": "#ffdad8",
+            "on-secondary": "#ffffff",
+            "surface-container": "#ffe9e4",
+            "primary-container": "#ac5e5d",
+            "secondary-container": "#c7edbd",
+            "surface-container-low": "#fff1ed",
+            "primary-fixed-dim": "#ffb3b0",
+            "inverse-on-surface": "#ffede9",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#c7edbd",
+            "on-secondary-container": "#4c6c46",
+            "surface-container-lowest": "#ffffff",
+            "tertiary": "#7b542b",
+            "secondary": "#466641",
+            "outline-variant": "#d9c1c0",
+            "tertiary-fixed": "#ffdcbd",
+            "tertiary-fixed-dim": "#f0bd8b",
+            "error": "#ba1a1a",
+            "on-primary-container": "#fffbff",
+            "outline": "#867271",
+            "on-tertiary-fixed-variant": "#623f18",
+            "surface-container-highest": "#fedbd2",
+            "on-error": "#ffffff",
+            "inverse-primary": "#ffb3b0",
+            "on-tertiary-container": "#fffbff",
+            "on-secondary-fixed-variant": "#2f4e2b",
+            "error-container": "#ffdad6",
+            "on-background": "#291712",
+            "on-tertiary-fixed": "#2c1600",
+            "surface-dim": "#f5d2ca",
+            "secondary-fixed-dim": "#acd0a3",
+            "surface-tint": "#914948",
+            "on-error-container": "#93000a",
+            "on-surface": "#291712",
+            "on-tertiary": "#ffffff",
+            "background": "#fff8f6",
+            "surface-bright": "#fff8f6",
+            "surface-container-high": "#ffe2db",
+            "brand": {
+              "cream": "#FFF9F4",
+              "surface": "#FBF3EC",
+              "rose": "#C87573",
+              "darkrose": "#B25D5B",
+              "sage": "#728C6A",
+              "cocoa": "#36221D",
+              "muted": "#7A645F",
+              "border": "#EEDDD2"
+            }
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.75rem",
+            "gutter-mobile": "0.75rem",
+            "space-md": "1.25rem",
+            "space-xs": "0.375rem",
+            "margin-desktop": "3.5rem",
+            "margin-mobile": "1rem",
+            "gutter": "1.25rem",
+            "margin": "1.5rem",
+            "space-lg": "2rem",
+            "space-xl": "3.25rem",
+            "gutter-desktop": "2rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "display-lg": ["Playfair Display"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "display-lg-mobile": ["Playfair Display"],
+            "serif": ['"Playfair Display"', 'Georgia', 'serif'],
+            "script": ['"Alex Brush"', 'cursive'],
+            "sans": ['"Plus Jakarta Sans"', 'sans-serif']
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "fontWeight": "500" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-md": ["26px", { "lineHeight": "34px", "fontWeight": "500" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    
+    @keyframes gentle-float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(2deg); }
+    }
+    @keyframes gentle-float-alt {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(-2deg); }
+    }
+    @keyframes threadFlow {
+      to { stroke-dashoffset: -40; }
+    }
+    .animate-float-slow { animation: gentle-float 6s ease-in-out infinite; }
+    .animate-float-slow-alt { animation: gentle-float-alt 7s ease-in-out infinite; }
+    .thread-dash-flow { stroke-dasharray: 6, 6; animation: threadFlow 3s linear infinite; }
+
+    /* Intro animations */
+    @keyframes bgSoftReveal {
+      0% { opacity: 0; filter: blur(4px); }
+      100% { opacity: 1; filter: blur(0); }
+    }
+    @keyframes flowerGentleEntrance {
+      0% { opacity: 0; transform: translateY(18px) scale(0.96); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes subtleFadeUp {
+      0% { opacity: 0; transform: translateY(12px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes softFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .anim-bg { animation: bgSoftReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .anim-flower { opacity: 0; animation: flowerGentleEntrance 1.3s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards; }
+    .anim-float { animation: softFloat 7s ease-in-out infinite alternate; }
+    .anim-title { opacity: 0; animation: subtleFadeUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.75s forwards; }
+    .anim-tagline { opacity: 0; animation: subtleFadeUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.05s forwards; }
+    .anim-cta { opacity: 0; animation: subtleFadeUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) 1.35s forwards; }
+
+    .intro-exit {
+      transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), transform 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0 !important;
+      transform: scale(1.04) !important;
+      pointer-events: none;
+    }
+
+    .warm-vignette {
+      background: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #FFF8F2 60%, #F7EBE0 100%);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .anim-bg, .anim-flower, .anim-title, .anim-tagline, .anim-cta, .anim-float {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-surface-variant selection:text-on-surface overflow-hidden m-0 p-0 select-none">
+
+  <!-- ========================================================
+       1. FULL-SCREEN DEDICATED INTRO / SPLASH OVERLAY
+       ======================================================== -->
+  <div id="intro-screen" class="fixed inset-0 w-full h-full flex flex-col justify-between items-center warm-vignette anim-bg px-4 sm:px-6 py-4 sm:py-6 md:py-8 z-50 overflow-y-auto">
+    
+    <!-- Top Brand Eyebrow -->
+    <header class="w-full flex justify-between items-center max-w-5xl pt-1">
+      <div class="flex items-center gap-2 text-xs tracking-[0.16em] uppercase text-[#4A3530] font-semibold">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#8F3B39]"></span>
+        <span>HANDCRAFTED WITH YARN &amp; LOVE</span>
+      </div>
+      <div class="text-xs tracking-[0.16em] uppercase text-[#4A3530] font-semibold hidden sm:block">
+        <span>LOHARDAGA STUDIO</span>
+      </div>
+    </header>
+
+    <!-- Center Composition -->
+    <section class="flex-1 flex flex-col items-center justify-center w-full max-w-3xl text-center my-auto py-2">
+      <div class="anim-flower relative mb-3 sm:mb-4 md:mb-5 group">
+        <div class="absolute -inset-6 md:-inset-8 bg-[#ECC9BF]/25 rounded-full blur-2xl -z-10 pointer-events-none transform group-hover:scale-105 transition-transform duration-1000"></div>
+        <div class="anim-float relative w-[210px] sm:w-[260px] md:w-[300px] lg:w-[330px] aspect-square rounded-[30px] md:rounded-[38px] overflow-hidden p-2 bg-gradient-to-b from-[#FFFDFC] to-[#F7ECE4] border border-[#ECD9CE]/80 shadow-[0_20px_50px_-15px_rgba(180,120,105,0.22)] ring-1 ring-white/80">
+          <img src="./stitch_maa_s_magic_crochet_boutique_ui_ux/exquisite_studio_photograph_of_a_handmade_crochet_flower_bouquet_centered_on_a/screen.png" alt="Handcrafted crochet bouquet by Maa's Magic Crochet featuring blooming rose, daisy, and tulip" class="w-full h-full object-cover object-center rounded-[24px] md:rounded-[32px] filter contrast-[1.03] saturate-[1.02]" loading="eager">
+        </div>
+      </div>
+
+      <div class="anim-title mb-2 sm:mb-3">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[3.2rem] leading-[1.1] font-serif font-bold tracking-[-0.01em] text-[#241410]">
+          Maa's Magic <span class="font-medium italic text-[#8F3B39]">Crochet</span>
+        </h1>
+      </div>
+
+      <div class="anim-tagline mb-4 sm:mb-6">
+        <p class="text-xs sm:text-sm md:text-base text-[#44312D] tracking-[0.04em] font-medium">
+          Small stitches, big happiness <span class="text-[#8F3B39] inline-block ml-0.5 font-semibold">♡</span>
+        </p>
+      </div>
+
+      <div class="anim-cta flex flex-wrap lg:flex-nowrap items-center justify-center gap-2.5 sm:gap-3.5 w-full max-w-3xl mx-auto">
+        <!-- 1. Explore Collection -->
+        <button id="explore-collection-btn" onclick="handleEnterMagic()" aria-label="Explore Maa's Magic Crochet Collection" class="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 lg:px-5 xl:px-7 py-3 rounded-full bg-[#AD4C4A] text-white font-semibold text-xs sm:text-sm md:text-base tracking-[0.04em] shadow-[0_10px_24px_-4px_rgba(173,76,74,0.45)] hover:bg-[#943D3B] hover:shadow-[0_14px_30px_-4px_rgba(173,76,74,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer whitespace-nowrap">
+          <span class="text-white drop-shadow-sm">Explore Collection</span>
+          <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </button>
+
+        <!-- 2. Order on WhatsApp -->
+        <button id="intro-whatsapp-btn" onclick="triggerWhatsApp('Hello Maa’s Magic Crochet! I found your crochet studio and would like to know more about your products.')" aria-label="Order on WhatsApp" class="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 lg:px-5 xl:px-7 py-3 rounded-full bg-[#466641] text-white font-semibold text-xs sm:text-sm md:text-base tracking-[0.04em] shadow-[0_10px_24px_-4px_rgba(70,102,65,0.35)] hover:bg-[#385234] hover:shadow-[0_14px_30px_-4px_rgba(70,102,65,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer whitespace-nowrap">
+          <span class="material-symbols-outlined text-[18px] sm:text-[20px]">chat</span>
+          <span class="text-white drop-shadow-sm">Order on WhatsApp</span>
+        </button>
+
+        <!-- 3. Custom Order -->
+        <button id="intro-custom-order-btn" onclick="openCustomOrderFromIntro()" aria-label="Open Custom Order Screen" class="group relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 lg:px-5 xl:px-7 py-3 rounded-full bg-[#B57C3E] text-white font-semibold text-xs sm:text-sm md:text-base tracking-[0.04em] shadow-[0_10px_24px_-4px_rgba(181,124,62,0.35)] hover:bg-[#976228] hover:shadow-[0_14px_30px_-4px_rgba(181,124,62,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer whitespace-nowrap">
+          <span class="material-symbols-outlined text-[18px] sm:text-[20px]">auto_awesome</span>
+          <span class="text-white drop-shadow-sm">Custom Order</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Bottom Footer Provenance -->
+    <footer class="w-full flex justify-between items-center max-w-5xl pb-1 text-[11px] sm:text-xs text-brand-muted/70 tracking-[0.12em]">
+      <div>
+        <span class="text-[11px] sm:text-xs text-[#5A423D] font-medium tracking-[0.1em]">Hand-knotted with patience &amp; love</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] sm:text-xs text-[#5A423D] font-medium tracking-[0.1em]">
+        <span>100% Cotton &amp; Wool Yarn</span>
+        <span class="w-1 h-1 rounded-full bg-[#8F3B39]"></span>
+        <span>Bespoke Keepsakes</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========================================================
+       CENTRALIZED CONTACT CONFIGURATION (TEST SETUP)
+       Replace these two values with real business details later.
+       All WhatsApp & Instagram buttons on the entire site
+       automatically use these values!
+       ======================================================== -->
+  <script>
+    const CONTACT_CONFIG = {
+      whatsappNumber: "918299779264",
+      instagramUsername: "ankyy_047"
+    };
+
+    function getWhatsAppUrl(message) {
+      const base = `https://wa.me/${CONTACT_CONFIG.whatsappNumber}`;
+      return message ? `${base}?text=${encodeURIComponent(message)}` : base;
+    }
+
+    function getInstagramUrl() {
+      return `https://instagram.com/${CONTACT_CONFIG.instagramUsername}`;
+    }
+
+    function triggerWhatsApp(customMessage) {
+      const defaultText = "Hello Maa’s Magic Crochet! I’d like to know more about your crochet products.";
+      const msg = customMessage || defaultText;
+      const whatsappUrl = getWhatsAppUrl(msg);
+      
+      if (typeof showToast === 'function') {
+        showToast("WhatsApp Order Initialized", "Connecting directly to Maa's studio chat...");
+      }
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      }, 400);
+    }
+
+    function orderProductOnWhatsApp(productName) {
+      const cleanName = typeof productName === 'string' ? productName.replace(/&amp;/g, '&') : productName;
+      const message = `Hello Maa’s Magic Crochet! I’m interested in ordering: ${cleanName}. Please share the price and availability.`;
+      triggerWhatsApp(message);
+    }
+
+    function applyContactConfig() {
+      const instagramUrl = getInstagramUrl();
+      document.querySelectorAll('a[data-social="instagram"]').forEach(link => {
+        link.href = instagramUrl;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      });
+    }
+
+    function handleEnterMagic() {
+      const intro = document.getElementById('intro-screen');
+      if (!intro) return;
+      
+      if (typeof showHomepageView === 'function') {
+        showHomepageView(false);
+      }
+      intro.classList.add('intro-exit');
+      
+      setTimeout(() => {
+        intro.style.display = 'none';
+        document.body.classList.remove('overflow-hidden', 'select-none');
+        document.body.style.overflow = '';
+      }, 850);
+    }
+  </script>
+
+  <!-- ========================================================
+       2. MAIN HOMEPAGE / PRODUCT CATALOGUE CONTENT
+       ======================================================== -->
+  <!-- ========================================================
+       2. MAIN HOMEPAGE / PRODUCT CATALOGUE CONTENT
+       ======================================================== -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#FAF5EF]/95 backdrop-blur-md border-b border-[#EEDDD2]/60 shadow-[0_2px_12px_rgba(41,23,18,0.03)] transition-all">
+    <div class="h-20 w-full px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <!-- Left Logo & Studio -->
+      <div class="flex items-center gap-3">
+        <a class="flex items-center gap-3 cursor-pointer group" data-path="home" href="#" onclick="showHomepageView(); return false;">
+          <img alt="Maa's Magic Crochet Brand Logo" class="w-11 h-11 sm:w-14 sm:h-14 rounded-full object-cover object-center shadow-[0_2px_8px_rgba(68,49,45,0.08)] border border-[#E8D8CC] transition-transform duration-300 group-hover:scale-105 shrink-0" src="assets/maa-magic-brand-logo.jpg"/>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-serif text-lg sm:text-xl font-bold text-[#2A1813] tracking-tight leading-none">Maa's Magic Crochet</span>
+              <span class="text-xs text-[#8E4646] font-semibold hidden sm:inline">• STUDIO</span>
+            </div>
+            <span class="text-[10px] sm:text-[11px] font-semibold text-[#8E4646] tracking-[0.16em] uppercase mt-1">LOHARDAGA STUDIO</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center Navigation Bar (Pill Container) -->
+      <nav class="hidden lg:flex items-center gap-1 bg-[#F1E6DD]/70 p-1 rounded-full border border-[#E8D8CC]/50 shadow-inner">
+        <a aria-current="page" class="px-5 py-2 transition-all bg-[#8E4646] text-white font-medium text-xs rounded-full shadow-sm cursor-pointer" data-path="home" href="#" onclick="showHomepageView(); return false;">Home</a>
+        <a class="px-4 py-2 rounded-full font-medium text-xs text-[#534342] hover:text-[#2A1813] hover:bg-[#FAF4EE] transition-all cursor-pointer" data-path="shop" href="#shop" onclick="showHomepageView();">Shop</a>
+        <a class="px-4 py-2 rounded-full font-medium text-xs text-[#534342] hover:text-[#2A1813] hover:bg-[#FAF4EE] transition-all cursor-pointer" data-path="custom-orders" href="#custom-orders" onclick="showCustomOrderScreen(); return false;">Custom Orders</a>
+        <a class="px-4 py-2 rounded-full font-medium text-xs text-[#534342] hover:text-[#2A1813] hover:bg-[#FAF4EE] transition-all cursor-pointer" data-path="about" href="#why-handmade" onclick="showHomepageView();">About</a>
+        <a class="px-4 py-2 rounded-full font-medium text-xs text-[#534342] hover:text-[#2A1813] hover:bg-[#FAF4EE] transition-all cursor-pointer" data-path="what-is-crochet" href="#what-is-crochet" onclick="showHomepageView();">What is Crochet</a>
+        <a class="px-4 py-2 rounded-full font-medium text-xs text-[#534342] hover:text-[#2A1813] hover:bg-[#FAF4EE] transition-all cursor-pointer" data-path="contact" href="#contact" onclick="showHomepageView();">Contact</a>
+      </nav>
+
+      <!-- Right Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a class="inline-flex items-center gap-2 bg-[#385335] text-white hover:bg-[#2C4429] px-5 py-2.5 rounded-full font-semibold text-xs tracking-wide shadow-[0_2px_8px_rgba(56,83,53,0.25)] hover:shadow-[0_4px_12px_rgba(56,83,53,0.35)] transition-all transform active:scale-95" href="javascript:void(0)" onclick="triggerWhatsApp('Hello Maa’s Magic Crochet! I’d like to know more about your crochet products.')">
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span>WhatsApp Order</span>
+        </a>
+        <div class="w-9 h-9 rounded-full bg-[#8E4646] text-white flex items-center justify-center shadow-sm cursor-pointer hover:bg-[#783636] transition-colors" title="Boutique Member">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-[#FAF5EF]">
+    <!-- Toast Notification -->
+    <div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 ease-out bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm max-w-sm" id="toastNotification">
+      <span class="material-symbols-outlined text-secondary-fixed text-[22px]">check_circle</span>
+      <div class="flex flex-col">
+        <span class="font-label-lg text-label-lg" id="toastTitle">Custom Inquiry Started</span>
+        <span class="font-body-sm text-body-sm text-inverse-on-surface/80" id="toastMessage">Connecting directly to Maa's studio on WhatsApp...</span>
+      </div>
+    </div>
+
+    <!-- MAIN HOMEPAGE CONTENT VIEW -->
+    <div id="homepage-view" class="flex flex-col w-full">
+      <!-- HERO SECTION -->
+      <section class="w-full relative bg-[#FAF5EF] pt-6 sm:pt-10 pb-0 overflow-hidden">
+        
+        <!-- Corner Botanical Accents (Top-Left & Bottom-Right) -->
+        <div class="absolute top-0 left-0 w-44 sm:w-64 aspect-square pointer-events-none opacity-40 -translate-x-6 -translate-y-6 z-0" aria-hidden="true">
+          <svg class="w-full h-full" viewBox="0 0 200 200" fill="none">
+            <path d="M 10 10 Q 70 80, 140 110" stroke="#728C6A" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 40 45 Q 80 30, 110 50" stroke="#728C6A" stroke-width="1.2" stroke-linecap="round" />
+            <!-- Baby's breath blossom clusters -->
+            <circle cx="140" cy="110" r="4" fill="#FFF8F6" stroke="#C87573" stroke-width="1" />
+            <circle cx="148" cy="104" r="3" fill="#FFF8F6" stroke="#C87573" stroke-width="0.8" />
+            <circle cx="110" cy="50" r="4" fill="#FFF8F6" stroke="#C87573" stroke-width="1" />
+            <circle cx="102" cy="42" r="3" fill="#FFF8F6" stroke="#C87573" stroke-width="0.8" />
+            <circle cx="75" cy="85" r="3.5" fill="#FFF8F6" stroke="#C87573" stroke-width="0.8" />
+            <!-- Soft leaves -->
+            <ellipse cx="60" cy="65" rx="7" ry="3.5" fill="#C7EDBD" fill-opacity="0.6" stroke="#728C6A" stroke-width="0.8" transform="rotate(-30 60 65)" />
+            <ellipse cx="105" cy="95" rx="7" ry="3.5" fill="#C7EDBD" fill-opacity="0.6" stroke="#728C6A" stroke-width="0.8" transform="rotate(25 105 95)" />
+          </svg>
+        </div>
+
+        <div class="absolute bottom-16 right-0 w-48 sm:w-72 aspect-square pointer-events-none opacity-35 translate-x-12 translate-y-8 z-0 hidden lg:block" aria-hidden="true">
+          <svg class="w-full h-full" viewBox="0 0 200 200" fill="none">
+            <path d="M 190 190 Q 120 120, 50 90" stroke="#728C6A" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M 150 145 Q 110 160, 80 140" stroke="#728C6A" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="50" cy="90" r="4" fill="#FFF8F6" stroke="#C87573" stroke-width="1" />
+            <circle cx="42" cy="96" r="3" fill="#FFF8F6" stroke="#C87573" stroke-width="0.8" />
+            <circle cx="80" cy="140" r="4" fill="#FFF8F6" stroke="#C87573" stroke-width="1" />
+            <ellipse cx="130" cy="125" rx="7" ry="3.5" fill="#C7EDBD" fill-opacity="0.6" stroke="#728C6A" stroke-width="0.8" transform="rotate(40 130 125)" />
+          </svg>
+        </div>
+
+        <!-- Center Connecting Flowing Yarn & Crochet Storytelling Motifs (Desktop & Tablet) -->
+        <div class="absolute inset-0 pointer-events-none select-none overflow-hidden hidden md:block z-0" aria-hidden="true">
+          <svg class="w-full h-full" viewBox="0 0 1300 640" fill="none" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="yarnPathGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C87573" stop-opacity="0.9" />
+                <stop offset="35%" stop-color="#E09B92" stop-opacity="0.95" />
+                <stop offset="70%" stop-color="#B25D5B" stop-opacity="0.9" />
+                <stop offset="100%" stop-color="#C87573" stop-opacity="0.85" />
+              </linearGradient>
+              <linearGradient id="sagePathGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#728C6A" stop-opacity="0.5" />
+                <stop offset="100%" stop-color="#466641" stop-opacity="0.7" />
+              </linearGradient>
+              <linearGradient id="goldHookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C49768" />
+                <stop offset="50%" stop-color="#E5C79E" />
+                <stop offset="100%" stop-color="#966C41" />
+              </linearGradient>
+              <filter id="motifGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#8E4646" flood-opacity="0.14" />
+              </filter>
+              <filter id="leafShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#385335" flood-opacity="0.12" />
+              </filter>
+            </defs>
+
+            <!-- 1. SECONDARY SAGE GREEN BOTANICAL THREAD (Softly weaving in background) -->
+            <path d="M 430 175 C 485 140, 535 150, 580 185 C 630 220, 680 235, 730 200 C 758 180, 778 200, 795 225"
+                  stroke="url(#sagePathGrad)" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 4" class="opacity-60" />
+
+            <!-- 2. PRIMARY FLOWING DUSTY-ROSE YARN PATH -->
+            <!-- Organic S-curve connecting TEXT -> YARN -> CROCHET -> FLOWERS -> BOUQUET -->
+            <path d="M 425 145 C 465 135, 500 160, 528 190 C 555 220, 580 230, 615 215 C 655 200, 680 170, 715 178 C 748 186, 770 215, 792 240"
+                  stroke="url(#yarnPathGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+
+            <!-- Animated flowing dash overlay for a live crafted thread feel -->
+            <path d="M 425 145 C 465 135, 500 160, 528 190 C 555 220, 580 230, 615 215 C 655 200, 680 170, 715 178 C 748 186, 770 215, 792 240"
+                  stroke="#FFF2EE" stroke-width="1.2" stroke-linecap="round" class="thread-dash-flow opacity-70" />
+
+            <!-- Delicate Slip-Stitch Heart Loop connecting along yarn path near (548, 208) -->
+            <g transform="translate(548, 208)">
+              <path d="M 0 0 C -7 -10, -15 -3, -8 5 C -2 11, 0 15, 0 15 C 0 15, 2 11, 8 5 C 15 -3, 7 -10, 0 0 Z" 
+                    fill="#FDEBE7" fill-opacity="0.8" stroke="#C87573" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+
+            <!-- 3. TASTEFUL CENTRAL CROCHET HERO MOTIF (Center focal point: Yarn Ball + Hook + Blossom) -->
+            <g transform="translate(640, 185)" filter="url(#motifGlow)">
+              <!-- Soft radial ambient glow -->
+              <circle cx="0" cy="0" r="34" fill="#FEDBD2" fill-opacity="0.45" />
+
+              <!-- Slender Handcrafted Wooden/Brass Crochet Hook angled through yarn -->
+              <g transform="rotate(-30)">
+                <!-- Hook Shaft & Grip -->
+                <rect x="-2.5" y="-34" width="5" height="68" rx="2.5" fill="url(#goldHookGrad)" stroke="#7B542B" stroke-width="0.7" />
+                <!-- Grip thumb indent line -->
+                <ellipse cx="0" cy="2" rx="1.5" ry="7" fill="#7B542B" fill-opacity="0.25" />
+                <!-- Slender Neck & Hook Tip -->
+                <path d="M 0 -34 L 0 -44 C 0 -46, -3.5 -46, -3.5 -43.5 C -3.5 -41, -0.8 -40, 0 -40" 
+                      stroke="#966C41" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              </g>
+
+              <!-- Mini Artisan Yarn Ball (Layered Ribbed Stitches) -->
+              <g transform="translate(-10, 6)">
+                <circle cx="0" cy="0" r="16" fill="#F0A69B" stroke="#8E4646" stroke-width="1.8" />
+                <!-- Yarn winding strands -->
+                <path d="M -11 -7 C -4 -13, 8 -10, 12 -3" stroke="#8E4646" stroke-width="1.4" fill="none" stroke-linecap="round" />
+                <path d="M -13 2 C -6 -4, 7 0, 11 8" stroke="#8E4646" stroke-width="1.4" fill="none" stroke-linecap="round" />
+                <path d="M -8 11 C 0 6, 8 10, 6 14" stroke="#8E4646" stroke-width="1.3" fill="none" stroke-linecap="round" />
+                <path d="M -4 -13 C 3 -5, 1 7, -6 12" stroke="#FFF0EC" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.9" />
+              </g>
+
+              <!-- Delicate Handcrafted Blush Crochet Flower nestled next to the yarn ball -->
+              <g transform="translate(14, -6)">
+                <!-- Soft Green Leaf Pair -->
+                <path d="M 6 -8 C 16 -16, 24 -10, 22 2 C 14 6, 8 0, 6 -8 Z" fill="#728C6A" stroke="#466641" stroke-width="1.1" filter="url(#leafShadow)" />
+                <!-- 5-Petal Flower Petals -->
+                <circle cx="0" cy="-9" r="6.2" fill="#FCE4DE" stroke="#B25D5B" stroke-width="1.3" />
+                <circle cx="8.5" cy="-3" r="6.2" fill="#FCE4DE" stroke="#B25D5B" stroke-width="1.3" />
+                <circle cx="5.5" cy="7.5" r="6.2" fill="#FCE4DE" stroke="#B25D5B" stroke-width="1.3" />
+                <circle cx="-5.5" cy="7.5" r="6.2" fill="#FCE4DE" stroke="#B25D5B" stroke-width="1.3" />
+                <circle cx="-8.5" cy="-3" r="6.2" fill="#FCE4DE" stroke="#B25D5B" stroke-width="1.3" />
+                <!-- Flower Stitched Center -->
+                <circle cx="0" cy="0" r="5" fill="#FFF9F4" stroke="#8E4646" stroke-width="1.3" />
+                <circle cx="0" cy="0" r="2.2" fill="#8E4646" />
+              </g>
+            </g>
+
+            <!-- 4. SECONDARY MINI CROCHET BLOSSOM (Along thread leading toward bouquet, x=735, y=210) -->
+            <g transform="translate(735, 210)" filter="url(#motifGlow)">
+              <!-- Leaf -->
+              <ellipse cx="7" cy="-7" rx="5.5" ry="2.8" fill="#C7EDBD" stroke="#728C6A" stroke-width="1" transform="rotate(-25 7 -7)" />
+              <!-- Mini 5-petal flower -->
+              <circle cx="0" cy="-5.5" r="3.8" fill="#F7C9C0" stroke="#8E4646" stroke-width="1.1" />
+              <circle cx="5.2" cy="-1.6" r="3.8" fill="#F7C9C0" stroke="#8E4646" stroke-width="1.1" />
+              <circle cx="3.2" cy="4.4" r="3.8" fill="#F7C9C0" stroke="#8E4646" stroke-width="1.1" />
+              <circle cx="-3.2" cy="4.4" r="3.8" fill="#F7C9C0" stroke="#8E4646" stroke-width="1.1" />
+              <circle cx="-5.2" cy="-1.6" r="3.8" fill="#F7C9C0" stroke="#8E4646" stroke-width="1.1" />
+              <circle cx="0" cy="0" r="3" fill="#FFF8F6" stroke="#8E4646" stroke-width="1" />
+              <circle cx="0" cy="0" r="1.3" fill="#8E4646" />
+            </g>
+
+            <!-- 5. DELICATE BOTANICAL SPRIG (Branching off upper thread near left text, x=485, y=140) -->
+            <g transform="translate(485, 140)">
+              <path d="M 0 0 Q 14 -18, 28 -22" stroke="#728C6A" stroke-width="1.2" stroke-linecap="round" />
+              <path d="M 10 -12 Q 20 -8, 24 -4" stroke="#728C6A" stroke-width="1" stroke-linecap="round" />
+              <circle cx="28" cy="-22" r="3" fill="#FFF9F4" stroke="#C87573" stroke-width="0.8" />
+              <circle cx="33" cy="-18" r="2.2" fill="#FFF9F4" stroke="#C87573" stroke-width="0.7" />
+              <circle cx="24" cy="-4" r="2.4" fill="#FFF9F4" stroke="#C87573" stroke-width="0.7" />
+            </g>
+
+            <!-- 6. EDITORIAL STORYTELLING TYPOGRAPHY (Refined, small, elegant) -->
+            <!-- "LOOP BY LOOP" above the center motif -->
+            <g transform="translate(635, 122)" class="opacity-80 select-none pointer-events-none">
+              <text x="0" y="0" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" letter-spacing="0.28em" fill="#7A645F" text-anchor="middle">✦ LOOP BY LOOP ✦</text>
+            </g>
+
+            <!-- "handmade with love" & "SLOW ARTISTRY" beneath center motif (above buttons area) -->
+            <g transform="translate(635, 256)" class="opacity-75 select-none pointer-events-none">
+              <text x="0" y="0" font-family="'Playfair Display', serif" font-style="italic" font-size="11.5" letter-spacing="0.14em" fill="#8E4646" text-anchor="middle">handmade with love</text>
+              <text x="0" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="600" letter-spacing="0.22em" fill="#966C41" text-anchor="middle">SLOW ARTISTRY • 100% YARN</text>
+            </g>
+
+            <!-- Floating tiny artisan sparkle stars & stitch dots -->
+            <g class="opacity-60 select-none pointer-events-none">
+              <!-- Tiny 4-point star sparkles -->
+              <path d="M 470 100 Q 470 106, 476 106 Q 470 106, 470 112 Q 470 106, 464 106 Q 470 106, 470 100 Z" fill="#C87573" />
+              <path d="M 720 142 Q 720 146, 724 146 Q 720 146, 720 150 Q 720 146, 716 146 Q 720 146, 720 142 Z" fill="#728C6A" opacity="0.8" />
+              <path d="M 570 135 Q 570 138, 573 138 Q 570 138, 570 141 Q 570 138, 567 138 Q 570 138, 570 135 Z" fill="#C87573" opacity="0.7" />
+              <path d="M 765 175 Q 765 178, 768 178 Q 765 178, 765 181 Q 765 178, 762 178 Q 765 178, 765 175 Z" fill="#C87573" opacity="0.85" />
+
+              <!-- Micro stitch dots along path -->
+              <circle cx="505" cy="165" r="1.5" fill="#8E4646" opacity="0.45" />
+              <circle cx="585" cy="225" r="1.5" fill="#728C6A" opacity="0.45" />
+              <circle cx="680" cy="195" r="1.5" fill="#8E4646" opacity="0.45" />
+              <circle cx="705" cy="180" r="1.5" fill="#728C6A" opacity="0.45" />
+            </g>
+
+            <!-- 7. LOWER YARN THREAD (Keeps bottom connection harmonious) -->
+            <path d="M 60 520 C 130 540, 240 550, 360 530 C 410 520, 435 485, 420 470 C 405 455, 385 470, 395 500 C 410 545, 480 500, 560 515 C 650 530, 740 545, 820 540" 
+                  stroke="url(#yarnPathGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            
+            <!-- Lower heart loop -->
+            <path d="M 412 485 C 412 478, 403 474, 397 482 C 391 474, 382 478, 382 485 C 382 495, 397 504, 397 504 C 397 504, 412 495, 412 485 Z" 
+                  fill="none" stroke="#C87573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+            <!-- Lower-Center Dusty Pink Flower near Baby's Breath -->
+            <g transform="translate(735, 520)">
+              <g class="animate-float-slow" filter="url(#motifGlow)">
+                <path d="M -15 -10 Q -30 -35, -45 -45" stroke="#728C6A" stroke-width="1.4" stroke-linecap="round" />
+                <circle cx="-45" cy="-45" r="3.5" fill="#FFF8F6" stroke="#C87573" stroke-width="0.9" />
+                <circle cx="-35" cy="-38" r="2.8" fill="#FFF8F6" stroke="#C87573" stroke-width="0.8" />
+                <circle cx="0" cy="0" r="19" fill="#FAD4CD" fill-opacity="0.35" />
+                <circle cx="0" cy="-11.5" r="7.5" fill="#E59A8E" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="10" cy="-6" r="7.5" fill="#E59A8E" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="10" cy="6" r="7.5" fill="#E59A8E" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="0" cy="11.5" r="7.5" fill="#E59A8E" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="-10" cy="6" r="7.5" fill="#E59A8E" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="-10" cy="-6" r="7.5" fill="#E59A8E" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="0" cy="0" r="6.5" fill="#FFF9F4" stroke="#8E4646" stroke-width="1.6" />
+                <circle cx="0" cy="0" r="3" fill="#8E4646" />
+              </g>
+            </g>
+
+          </svg>
+        </div>
+
+        <!-- Main Content Grid (12 Columns) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+          
+          <!-- LEFT EDITORIAL COLUMN (Cols 1-7) -->
+          <div class="lg:col-span-7 flex flex-col justify-center z-10 pt-2 lg:pt-4">
+            
+            <!-- Category Eyebrow Pill -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F6DBD4]/80 border border-[#EDC5BD]/60 w-fit shadow-xs mb-4 sm:mb-5">
+              <span class="w-2 h-2 rounded-full bg-[#8E4646]"></span>
+              <span class="font-sans font-semibold text-[11px] tracking-[0.14em] uppercase text-[#743232]">Handmade Crochet Creations</span>
+            </div>
+
+            <!-- Main High-Editorial Heading -->
+            <h1 class="text-4xl sm:text-5xl lg:text-[3.9rem] leading-[1.08] font-serif font-bold tracking-[-0.015em] text-[#291712] mb-4">
+              Flowers that <br/>
+              <span class="font-normal italic text-[#8E4646]">never fade.</span>
+            </h1>
+
+            <!-- Editorial Description -->
+            <p class="text-base sm:text-lg text-[#534342] max-w-lg leading-relaxed font-normal mb-8">
+              Handcrafted crochet creations made with yarn, patience and love.
+            </p>
+
+            <!-- Three Premium CTA Buttons -->
+            <div class="flex flex-wrap lg:flex-nowrap items-center gap-2.5 sm:gap-3 xl:gap-3.5 mb-8">
+              <!-- 1. Explore Collection -->
+              <a href="#shop" class="group inline-flex items-center justify-center gap-2 xl:gap-2.5 px-4 sm:px-5 lg:px-3.5 xl:px-6 py-3 sm:py-3.5 rounded-full bg-[#8E4646] text-white font-semibold text-xs sm:text-sm tracking-[0.03em] shadow-[0_6px_20px_-4px_rgba(142,70,70,0.45)] hover:bg-[#783636] hover:shadow-[0_10px_26px_-4px_rgba(142,70,70,0.55)] hover:scale-[1.02] active:scale-95 transition-all whitespace-nowrap">
+                <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+                <span>Explore Collection</span>
+                <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+              </a>
+
+              <!-- 2. Order on WhatsApp -->
+              <button onclick="triggerWhatsApp('Hello Maa’s Magic Crochet! I’d like to place an order. Please share the details and pricing.')" class="group inline-flex items-center justify-center gap-2 xl:gap-2.5 px-4 sm:px-5 lg:px-3.5 xl:px-6 py-3 sm:py-3.5 rounded-full bg-[#385335] text-white font-semibold text-xs sm:text-sm tracking-[0.03em] shadow-[0_6px_20px_-4px_rgba(56,83,53,0.4)] hover:bg-[#2C4429] hover:shadow-[0_10px_26px_-4px_rgba(56,83,53,0.5)] hover:scale-[1.02] active:scale-95 transition-all cursor-pointer whitespace-nowrap">
+                <span class="material-symbols-outlined text-[18px]">chat</span>
+                <span>Order on WhatsApp</span>
+                <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+              </button>
+
+              <!-- 3. Custom Order -->
+              <button onclick="showCustomOrderScreen()" class="group inline-flex items-center justify-center gap-2 xl:gap-2.5 px-4 sm:px-5 lg:px-3.5 xl:px-6 py-3 sm:py-3.5 rounded-full bg-[#B57C3E] text-white font-semibold text-xs sm:text-sm tracking-[0.03em] shadow-[0_6px_20px_-4px_rgba(181,124,62,0.4)] hover:bg-[#976228] hover:shadow-[0_10px_26px_-4px_rgba(181,124,62,0.5)] hover:scale-[1.02] active:scale-95 transition-all cursor-pointer whitespace-nowrap">
+                <span class="material-symbols-outlined text-[18px]">filter_vintage</span>
+                <span>Custom Order</span>
+                <span class="text-sm transition-transform group-hover:translate-x-1">→</span>
+              </button>
+            </div>
+
+            <!-- Handmade Feature Row (Small Icons & Muted Text) -->
+            <div class="flex flex-wrap items-center gap-6 sm:gap-8 pt-2 text-xs sm:text-sm text-[#44312D] font-medium mb-8">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#8E4646] text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                <span>Handmade with care</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#466641] text-[18px]">spa</span>
+                <span>Thoughtfully crafted</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#7B542B] text-[18px]">auto_awesome</span>
+                <span>Custom orders available</span>
+              </div>
+            </div>
+
+            <!-- Lower-Left Decorative Yarn Ball & Calligraphy Phrase -->
+            <div class="flex items-center gap-4 pt-1 sm:pt-3">
+              <!-- Cute Soft Crochet Yarn Ball SVG -->
+              <div class="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 filter drop-shadow-md">
+                <svg class="w-full h-full" viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="32" fill="#EFA9A0" stroke="#8E4646" stroke-width="2.5" />
+                  <path d="M 16 30 C 30 14, 56 22, 64 38" stroke="#8E4646" stroke-width="2.2" fill="none" stroke-linecap="round" />
+                  <path d="M 14 44 C 28 28, 54 34, 62 52" stroke="#8E4646" stroke-width="2.2" fill="none" stroke-linecap="round" />
+                  <path d="M 22 58 C 38 46, 58 54, 52 68" stroke="#8E4646" stroke-width="2" fill="none" stroke-linecap="round" />
+                  <path d="M 32 12 C 46 32, 44 56, 26 66" stroke="#D98A88" stroke-width="1.8" fill="none" stroke-linecap="round" />
+                </svg>
+              </div>
+
+              <!-- Handwritten Calligraphy Phrase -->
+              <div class="flex flex-col text-left select-none">
+                <span class="font-['Caveat'] text-2xl sm:text-[1.75rem] text-[#8E4646] font-semibold leading-tight tracking-wide">
+                  Small threads
+                </span>
+                <span class="font-['Caveat'] text-2xl sm:text-[1.75rem] text-[#8E4646] font-semibold leading-tight tracking-wide -mt-1">
+                  Brighten big days <span class="text-xl">♡</span>
+                </span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT EDITORIAL COLUMN (Product Feature Card) (Cols 8-12) -->
+          <div class="lg:col-span-5 relative mt-4 lg:mt-0 flex flex-col items-center">
+            
+            <!-- Large Rounded Showcase Card Frame -->
+            <div class="relative w-full max-w-md mx-auto rounded-[32px] sm:rounded-[40px] p-3 sm:p-4 bg-gradient-to-b from-[#FFFDFB] to-[#F7ECE4] border border-[#ECD9CE] shadow-[0_24px_54px_-12px_rgba(90,50,40,0.18)] transition-transform hover:-translate-y-1 duration-500">
+              
+              <div class="w-full aspect-[4/4.4] rounded-[26px] sm:rounded-[32px] overflow-hidden relative group bg-surface-container">
+                <!-- REAL LOCAL PRODUCT BOUQUET PHOTOGRAPH -->
+                <img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" 
+                     alt="Handcrafted crochet bouquet with blooming rose, tulip, daisy, and sunflower" 
+                     src="./stitch_maa_s_magic_crochet_boutique_ui_ux/exquisite_studio_photograph_of_a_handmade_crochet_flower_bouquet_centered_on_a/screen.png"/>
+                
+                <!-- Gentle Gradient Vignette -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+
+                <!-- Floating Brushstroke Badge (Upper-Right) -->
+                <div class="absolute top-4 right-4 bg-[#F8DDD7]/90 backdrop-blur-md px-4 py-1.5 rounded-full border border-[#EDC5BD]/70 shadow-sm flex items-center gap-1">
+                  <span class="font-['Caveat'] text-base sm:text-lg font-bold text-[#8E4646] tracking-wide">Handmade with Love ♡</span>
+                </div>
+
+                <!-- Floating White Product Information Panel -->
+                <div class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 bg-white/95 backdrop-blur-md p-3.5 sm:p-4 rounded-2xl shadow-lg border border-[#EEDDD2]/60 flex items-center justify-between">
+                  <div class="flex flex-col">
+                    <h3 class="font-serif font-bold text-base sm:text-lg text-[#2A1813] leading-tight">Handcrafted Crochet Bouquet</h3>
+                    <p class="text-xs text-[#7A645F] font-medium mt-0.5">Handmade crochet creations</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-3">
+                    <span class="text-xs sm:text-sm font-semibold text-[#8E4646] tracking-wide whitespace-nowrap">Price on Request</span>
+                    <button onclick="openProductByIndex(0)" class="w-10 h-10 rounded-full bg-[#8E4646] text-white flex items-center justify-center hover:bg-[#783636] hover:scale-105 active:scale-95 transition-all shadow-sm cursor-pointer" title="View Bouquet Details">
+                      <span class="text-lg leading-none font-bold">→</span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Minimal Carousel Controls (Below Card) -->
+            <div class="flex items-center gap-4 mt-4 pt-1">
+              <button onclick="openProductByIndex(0)" class="w-8 h-8 rounded-full bg-white/80 border border-[#EADBD0] text-[#7A645F] flex items-center justify-center hover:bg-white hover:text-[#8E4646] shadow-xs transition-all text-sm cursor-pointer" aria-label="Previous product">
+                ‹
+              </button>
+              
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#8E4646] shadow-xs"></span>
+                <span class="w-2 h-2 rounded-full bg-[#8E4646]/30"></span>
+                <span class="w-2 h-2 rounded-full bg-[#8E4646]/30"></span>
+              </div>
+
+              <button onclick="openProductByIndex(1)" class="w-8 h-8 rounded-full bg-white/80 border border-[#EADBD0] text-[#7A645F] flex items-center justify-center hover:bg-white hover:text-[#8E4646] shadow-xs transition-all text-sm cursor-pointer" aria-label="Next product">
+                ›
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- BOTTOM HERO FEATURE HIGHLIGHTS STRIP -->
+        <div class="w-full bg-[#FFF9F4]/90 backdrop-blur-sm border-t border-[#EEDDD2]/80 mt-12 py-5 px-4 sm:px-6 lg:px-12">
+          <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <!-- 4 Value Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 w-full md:w-auto">
+              <!-- 1. 100% Handmade -->
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#8E4646] text-[24px]">diversity_1</span>
+                <div class="flex flex-col">
+                  <span class="font-bold text-xs sm:text-sm text-[#2A1813] leading-none">100%</span>
+                  <span class="text-[11px] sm:text-xs text-[#7A645F] mt-0.5">Handmade</span>
+                </div>
+              </div>
+
+              <!-- 2. Unique Creations -->
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#8E4646] text-[24px]">eco</span>
+                <div class="flex flex-col">
+                  <span class="font-bold text-xs sm:text-sm text-[#2A1813] leading-none">Unique</span>
+                  <span class="text-[11px] sm:text-xs text-[#7A645F] mt-0.5">Creations</span>
+                </div>
+              </div>
+
+              <!-- 3. Perfect for Gifting -->
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#8E4646] text-[24px]">featured_seasonal_and_gifts</span>
+                <div class="flex flex-col">
+                  <span class="font-bold text-xs sm:text-sm text-[#2A1813] leading-none">Perfect</span>
+                  <span class="text-[11px] sm:text-xs text-[#7A645F] mt-0.5">for Gifting</span>
+                </div>
+              </div>
+
+              <!-- 4. Made with Love -->
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#8E4646] text-[24px]">favorite</span>
+                <div class="flex flex-col">
+                  <span class="font-bold text-xs sm:text-sm text-[#2A1813] leading-none">Made</span>
+                  <span class="text-[11px] sm:text-xs text-[#7A645F] mt-0.5">with Love</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slogan on Far Right -->
+            <div class="flex items-center gap-2 text-xs sm:text-sm text-[#7A645F] font-medium tracking-wide">
+              <span class="material-symbols-outlined text-[#8E4646] text-[18px]">spa</span>
+              <span>Spreading warmth, one stitch at a time.</span>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SECTION 3: FEATURED COLLECTION / SHOP -->
+      <section class="w-full bg-surface-container-low py-space-xl px-margin-mobile md:px-margin lg:px-margin-desktop scroll-mt-24" id="shop">
+        <div class="max-w-7xl mx-auto flex flex-col space-y-space-lg" id="featured-collection">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+            <div class="flex flex-col space-y-space-xs">
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Heirloom Creations</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">Made to Make You Smile</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Thoughtfully crafted crochet pieces for gifting, decorating and everyday moments.</p>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <span class="font-label-md text-label-md text-tertiary bg-surface-container px-3.5 py-1.5 rounded-full inline-flex items-center gap-1.5 shadow-xs">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary/70"></span>
+                <span>Price on Request</span>
+                <span class="text-outline text-xs">•</span>
+                <span class="text-on-surface-variant font-medium">Message us for pricing &amp; availability</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Category Filter Pills Navigation -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 -mb-2 no-scrollbar" id="shopFilterPills">
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary" data-category="all" onclick="filterShopCategory('all')" type="button">All</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Bouquets" onclick="filterShopCategory('Bouquets')" type="button">Bouquets</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Crochet Flowers" onclick="filterShopCategory('Crochet Flowers')" type="button">Crochet Flowers</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Hair Accessories" onclick="filterShopCategory('Hair Accessories')" type="button">Hair Accessories</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Keychains" onclick="filterShopCategory('Keychains')" type="button">Keychains</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Gajra" onclick="filterShopCategory('Gajra')" type="button">Gajra</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Decor" onclick="filterShopCategory('Decor')" type="button">Decor</button>
+            <button class="category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface" data-category="Stationery" onclick="filterShopCategory('Stationery')" type="button">Stationery</button>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md" id="productCatalogGrid">
+            <!-- Product 1 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Bouquets" onclick="openProductByIndex(0)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Handcrafted single red rose bouquet wrapped in boutique paper with satin ribbon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_single_red_rose_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Bouquet</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Handmade Single Red Rose Bouquet</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Handcrafted single red crochet rose in boutique paper wrapping with satin ribbon bow.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(0)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Handmade Single Red Rose Bouquet')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Bouquets" onclick="openProductByIndex(1)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Handmade trio bouquet collection featuring red rose, white blossom, and pink tulip" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_red_yellow_mixed_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Bouquet</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Mixed Trio Crochet Bouquet</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Handmade bouquet collection featuring red rose, white blossom, and pink tulip with elegant wraps.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(1)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Mixed Trio Crochet Bouquet')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Bouquets" onclick="openProductByIndex(2)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Handmade dual red roses paired with a blooming lily in paper cone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_red_rose_pair_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Bouquet</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Handmade Rose &amp; Lily Bouquet</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Handmade dual red crochet roses paired with a blooming lily in handcrafted paper cone.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(2)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Handmade Rose &amp; Lily Bouquet')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Bouquets" onclick="openProductByIndex(3)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Pink crochet tulip and white rose bouquet tied with shimmering gold bow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_pink_white_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Bouquet</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Pink Tulip &amp; White Rose Bouquet</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Delicate pink crochet tulip and white rose bouquet tied with a shimmering gold bow.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(3)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Pink Tulip &amp; White Rose Bouquet')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Bouquets" onclick="openProductByIndex(4)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Pink lily bloom and crimson rose accent mini bouquet with red ribbon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_pink_red_mini_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Bouquet</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Pink Lily &amp; Red Rose Mini Bouquet</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Charming mini floral bouquet featuring a star lily bloom and crimson rose accent.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(4)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Pink Lily &amp; Red Rose Mini Bouquet')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Crochet Flowers" onclick="openProductByIndex(5)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Vibrant golden sunflower hand-crocheted with rich chocolate center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_sunflower_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Flower</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm flex items-center gap-1 backdrop-blur-xs">
+                  <span class="material-symbols-outlined text-[12px]">photo_library</span> 3
+                </span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Handmade Crochet Sunflower</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Vibrant golden sunflower hand-crocheted with rich chocolate center and green leaf detail.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(5)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Handmade Crochet Sunflower')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Crochet Flowers" onclick="openProductByIndex(6)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Set of hand-crocheted red tulips and open blossom petals on flexible green stems" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_red_floral_set_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Flower</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Red Floral Bloom Set</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Artisanal set of hand-crocheted red tulips and open blossom petals on flexible green stems.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(6)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Red Floral Bloom Set')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Hair Accessories" onclick="openProductByIndex(7)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Hand-knitted elegant crochet bow featuring delicate faux-pearl bead centerpiece" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bow_red_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Hair Accessory</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm flex items-center gap-1 backdrop-blur-xs">
+                  <span class="material-symbols-outlined text-[12px]">palette</span> 2 Colors
+                </span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Crochet Bow Hair Clip / Tie</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Hand-knitted elegant crochet bow featuring delicate faux-pearl bead centerpiece.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(7)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Crochet Bow Hair Clip / Tie')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Hair Accessories" onclick="openProductByIndex(8)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Soft, voluminous hand-crocheted hair scrunchie with delicate scalloped contrast edging" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/scrunchie_flower_pink_white_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface/90 text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Hair Accessory</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full shadow-sm flex items-center gap-1 backdrop-blur-xs">
+                  <span class="material-symbols-outlined text-[12px]">photo_library</span> 3 Views
+                </span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Ruffled Crochet Hair Scrunchie</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Soft, voluminous hand-crocheted hair scrunchie with delicate scalloped contrast edging.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(8)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Ruffled Crochet Hair Scrunchie')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Keychains" onclick="openProductByIndex(9)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Charming mini bouquet keychains handcrafted with mini tulip, daisy, and sunflower stems" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/keychain_mini_flower_set_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-primary-fixed text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Keychain</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Handmade Crochet Mini Bouquet Keychain</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">Charming mini bouquet keychains handcrafted with mini tulip, daisy, and sunflower stems with secure split ring.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(9)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Handmade Crochet Mini Bouquet Keychain')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Gajra" onclick="openProductByIndex(10)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Handmade crochet floral gajra reusable hair accessory with green tie cords" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/gajra_white_pink_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Gajra</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Crochet Floral Gajra</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">A handmade crochet floral gajra, thoughtfully crafted as a beautiful and reusable hair accessory with green tie cords.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(10)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Crochet Floral Gajra')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Decor" onclick="openProductByIndex(11)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Handmade crochet floral hanging wall decor with vine bow and twin pink blossom bells" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/decor_hanging_pink_flowers_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-tertiary-fixed text-tertiary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Decor</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Crochet Floral Decor</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">A handmade crochet floral piece designed to add a warm and charming handmade touch to your space with hanging green vine bow and dual pink bells.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(11)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Crochet Floral Decor')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-catalog-card group bg-surface rounded-2xl p-space-sm shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between -translate-y-0 hover:-translate-y-1.5 cursor-pointer" data-category="Stationery" onclick="openProductByIndex(12)">
+              <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container mb-space-sm">
+                <img alt="Handmade crochet notebook cover with turquoise weave, daisy granny square, and purple button" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/notebook_crochet_cover_01.jpg/screen.png"/>
+                <span class="absolute top-2.5 left-2.5 bg-surface-variant text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-sm">Stationery</span>
+              </div>
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-baseline justify-between mb-1">
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Crochet Notebook Cover</h3>
+                  <span class="font-label-sm text-label-sm font-semibold text-primary/90 whitespace-nowrap ml-2">Price on Request</span>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">A handmade crochet cover designed to add a charming, personal touch to an everyday notebook featuring turquoise weave, daisy granny square, and purple button.</p>
+              </div>
+              <div class="pt-space-xs flex items-center gap-space-xs" onclick="event.stopPropagation()">
+                <button class="flex-1 py-2 px-space-xs text-center rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md transition-colors" onclick="openProductByIndex(12)">View Product</button>
+                <button class="p-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-colors shadow-sm" onclick="orderProductOnWhatsApp('Crochet Notebook Cover')" title="Order on WhatsApp">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- View All / Show Less Toggle (Only visible when 'All' category is active) -->
+          <div id="viewAllToggleContainer" class="flex justify-center pt-6 pb-2">
+            <button id="viewAllToggleBtn" onclick="toggleViewAll()" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[#D4B896]/60 bg-transparent text-[#7B542B] font-semibold text-sm tracking-[0.05em] hover:bg-[#F7ECE4] hover:border-[#B57C3E]/50 active:scale-95 transition-all duration-300 cursor-pointer">
+              <span id="viewAllToggleText">View All Products</span>
+              <span id="viewAllToggleArrow" class="text-xs transition-transform duration-300">↓</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: SHOP BY CATEGORY -->
+      <section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl">
+        <div class="max-w-7xl mx-auto flex flex-col space-y-space-lg">
+          <div class="flex flex-col space-y-space-xs text-center max-w-2xl mx-auto">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Curated Studio Forms</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">Explore the Collection</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Discover hand-crocheted accents made loop by loop for daily comfort, hair styling, and everlasting gifting.</p>
+          </div>
+          <!-- 7 Category Bento Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-space-sm">
+            <div class="col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Bouquets')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Handmade Crochet Bouquets Trio" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_red_yellow_mixed_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Bouquets</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Handcrafted floral arrangements</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+            <div class="col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Crochet Flowers')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-secondary-fixed flex items-center justify-center text-secondary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Handmade crochet flowers" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_sunflower_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Crochet Flowers</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Individual crochet stems &amp; blooms</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+            <div class="col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Hair Accessories')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Handmade Crochet Hair Accessories Bow" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/bow_red_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Hair Accessories</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Scrunchies, clips &amp; accessories</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+            <div class="col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Keychains')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Handmade Crochet Flower Bouquet Keychains" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/keychain_mini_flower_set_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Keychains</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Handmade charms &amp; mini creations</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+            <div class="col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Gajra')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-secondary-fixed flex items-center justify-center text-secondary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Handmade Crochet Gajra" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/gajra_white_pink_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Gajra</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Handmade floral garlands</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+            <div class="col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Decor')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Crochet Floral Decor" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/decor_hanging_pink_flowers_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Decor</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Handmade decorative pieces</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+            <div class="col-span-2 sm:col-span-1 flex flex-col p-space-sm rounded-2xl bg-surface-container hover:bg-surface-container-high transition-colors text-center group cursor-pointer shadow-sm" onclick="triggerCategoryFilter('Stationery')">
+              <div class="w-14 h-14 mx-auto mb-space-xs rounded-full bg-surface-variant flex items-center justify-center text-primary group-hover:scale-110 transition-transform overflow-hidden shadow-xs">
+                <img alt="Crochet Notebook Cover" class="w-full h-full object-cover" src="./stitch_maa_s_magic_crochet_boutique_ui_ux/notebook_crochet_cover_01.jpg/screen.png"/>
+              </div>
+              <h4 class="font-title-md text-title-md text-on-surface mb-1">Stationery</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Crochet notebook covers &amp; stationery</p>
+              <span class="mt-auto pt-space-xs font-label-md text-label-md text-primary font-semibold flex items-center justify-center gap-1">Explore →</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: WHY HANDMADE -->
+      <section class="w-full bg-surface-container-high py-space-xl px-margin-mobile md:px-margin lg:px-margin-desktop" id="why-handmade">
+        <div class="max-w-6xl mx-auto flex flex-col space-y-space-lg">
+          <div class="text-center max-w-xl mx-auto">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Our Gentle Ethos</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Made Slowly. Made Special.</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">In a world of rush, Maa's Magic Crochet celebrates the quiet art of mindful loops and lasting affection.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            <div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col space-y-space-xs transition-transform hover:-translate-y-1">
+              <div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-1"><span class="material-symbols-outlined text-[22px]">front_hand</span></div>
+              <h3 class="font-title-md text-title-md text-on-surface">Handcrafted</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Every piece is made by hand with care.</p>
+            </div>
+            <div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col space-y-space-xs transition-transform hover:-translate-y-1">
+              <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary mb-1"><span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">card_giftcard</span></div>
+              <h3 class="font-title-md text-title-md text-on-surface">Thoughtful</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Created to make gifting and everyday moments more meaningful.</p>
+            </div>
+            <div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col space-y-space-xs transition-transform hover:-translate-y-1">
+              <div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-1"><span class="material-symbols-outlined text-[22px]">hourglass_top</span></div>
+              <h3 class="font-title-md text-title-md text-on-surface">Long-lasting</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Crochet flowers bring floral beauty without the short lifespan of fresh flowers.</p>
+            </div>
+            <div class="bg-surface rounded-2xl p-space-md shadow-sm flex flex-col space-y-space-xs transition-transform hover:-translate-y-1">
+              <div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary mb-1"><span class="material-symbols-outlined text-[22px]">palette</span></div>
+              <h3 class="font-title-md text-title-md text-on-surface">Personal</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Many pieces can be customized according to colour and preference.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: WHAT IS CROCHET? -->
+      <section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl" id="what-is-crochet">
+        <div class="max-w-6xl mx-auto rounded-3xl bg-surface-container p-space-md md:p-space-xl shadow-md">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+            <div class="lg:col-span-6 flex flex-col space-y-space-sm">
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Craft Guide &amp; Heritage</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">What Exactly Is Crochet?</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant">Unlike machine knitting or mass-loomed textiles, true crochet cannot be replicated by modern industrial machinery. Each intertwining loop must be created individually by a human hand holding a single hooked needle.</p>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">At our Lohardaga studio, yarn transforms into structured sculptural botanicals and heirloom artifacts using fine combed-cotton strands, muscle memory, and unwavering patience.</p>
+              <div class="pt-space-sm grid grid-cols-3 gap-space-xs text-center">
+                <div class="bg-surface p-space-xs rounded-xl shadow-xs">
+                  <span class="material-symbols-outlined text-primary text-[20px] mb-1">gesture</span>
+                  <p class="font-label-md text-label-md text-on-surface font-semibold">Soft Cotton</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Pure combed yarn</p>
+                </div>
+                <div class="bg-surface p-space-xs rounded-xl shadow-xs">
+                  <span class="material-symbols-outlined text-tertiary text-[20px] mb-1">straighten</span>
+                  <p class="font-label-md text-label-md text-on-surface font-semibold">Single Hook</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">One loop at a time</p>
+                </div>
+                <div class="bg-surface p-space-xs rounded-xl shadow-xs">
+                  <span class="material-symbols-outlined text-secondary text-[20px] mb-1">spa</span>
+                  <p class="font-label-md text-label-md text-on-surface font-semibold">Everlasting</p>
+                  <p class="font-label-sm text-label-sm text-on-surface-variant">Floral heirloom</p>
+                </div>
+              </div>
+              <div class="pt-space-xs">
+                <button class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-primary-fixed-variant transition-colors font-semibold" onclick="triggerWhatsApp('Hello Maa! I would love to understand more about your crochet craft and yarns.')">
+                  <span>Learn About Crochet &amp; Custom Yarn</span>
+                  <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-6">
+              <div class="relative rounded-2xl overflow-hidden shadow-lg bg-surface-variant aspect-4/3">
+                <img class="w-full h-full object-cover" data-alt="Artisanal macro view of hands crocheting with warm natural wooden crochet hook and organic dusty pink cotton yarn, with finished flower petals resting on a neutral linen studio table." src="./stitch_maa_s_magic_crochet_boutique_ui_ux/heartwarming_documentary_style_photo_of_two_indian_women_artisans_smiling/screen.png"/>
+                <div class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface text-label-sm px-space-sm py-1 rounded-full backdrop-blur-sm">Maa's Workspace • Lohardaga</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: CUSTOM ORDERS -->
+      <section class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-lg" id="custom-orders">
+        <div class="max-w-6xl mx-auto rounded-3xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-high p-space-lg md:p-space-xl shadow-lg relative overflow-hidden">
+          <div class="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-x-12 translate-y-12">
+            <svg class="text-primary" fill="currentColor" height="320" viewbox="0 0 200 200" width="320">
+              <circle cx="100" cy="100" r="30"></circle>
+              <path d="M100 20 C85 60, 85 80, 100 90 C115 80, 115 60, 100 20 Z"></path>
+              <path d="M180 100 C140 85, 120 85, 110 100 C120 115, 140 115, 180 100 Z"></path>
+              <path d="M100 180 C85 140, 85 120, 100 110 C115 120, 115 140, 100 180 Z"></path>
+              <path d="M20 100 C60 85, 80 85, 90 100 C80 115, 60 115, 20 100 Z"></path>
+            </svg>
+          </div>
+          <div class="relative z-10 max-w-2xl flex flex-col space-y-space-sm">
+            <div class="inline-flex items-center gap-1 text-primary font-label-md text-label-md">
+              <span class="material-symbols-outlined text-[16px]">edit_note</span>
+              <span>Bespoke Commission Atelier</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">Have Something Special in Mind?</h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">Choose your colours, flowers and style, and let's create something made especially for you. From bridal gajras and trousseau blooms to personalized nursery decor.</p>
+            <div class="pt-space-xs flex flex-wrap gap-2 text-label-md">
+              <span class="px-3 py-1 bg-surface rounded-full shadow-xs text-on-surface">Personalized Bouquets</span>
+              <span class="px-3 py-1 bg-surface rounded-full shadow-xs text-on-surface">Bridal Gajra Sets</span>
+              <span class="px-3 py-1 bg-surface rounded-full shadow-xs text-on-surface">Anniversary Keepsakes</span>
+              <span class="px-3 py-1 bg-surface rounded-full shadow-xs text-on-surface">Gift Baskets</span>
+            </div>
+            <div class="pt-space-md">
+              <button class="inline-flex items-center gap-space-sm px-space-lg py-3.5 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg shadow-lg hover:bg-on-secondary-container transition-all transform active:scale-95" onclick="triggerWhatsApp('Hello Maa! I have a custom order idea in mind and would love to customize colours and stems with you.')">
+                <span class="material-symbols-outlined text-[20px]">chat</span>
+                <span>Discuss Your Custom Order</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: EVERGREEN GIFTING SECTION -->
+      <section class="w-full bg-surface-container-lowest py-space-xl px-margin-mobile md:px-margin lg:px-margin-desktop">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center">
+          <div class="md:col-span-5 order-2 md:order-1 relative">
+            <div class="rounded-3xl overflow-hidden shadow-md bg-surface-container-high aspect-square">
+              <img class="w-full h-full object-cover" data-alt="Delicately wrapped gift box tied with natural rustic string, dried lavender sprig, and a hand-crocheted miniature pastel rose perched on top with handwritten gift card." src="./stitch_maa_s_magic_crochet_boutique_ui_ux/close_up_product_photography_of_a_handmade_crochet_blush_pink_blooming_rose/screen.png"/>
+            </div>
+          </div>
+          <div class="md:col-span-7 order-1 md:order-2 flex flex-col space-y-space-sm pl-0 md:pl-space-md">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Memories That Stay</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">Give Something That Lasts</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">Handmade crochet flowers and studio creations make thoughtful gifts for birthdays, anniversaries, celebrations and quiet heartfelt moments. Unlike real flowers that wilt within days, these stay in full bloom year after year.</p>
+            <div class="grid grid-cols-2 gap-space-sm pt-space-xs font-body-sm text-body-sm text-on-surface">
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">celebration</span><span>Birthdays &amp; Celebrations</span></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">volunteer_activism</span><span>Anniversary Gifts</span></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">home_pin</span><span>Decor Keepsakes</span></div>
+              <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">sentiment_satisfied</span><span>Thoughtful Surprises</span></div>
+            </div>
+            <div class="pt-space-md">
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all" href="#shop">
+                <span>Explore Gifts</span>
+                <span class="material-symbols-outlined text-[16px]">north_east</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: INSTAGRAM / STUDIO MOMENTS -->
+      <section class="w-full py-space-xl px-margin-mobile md:px-margin lg:px-margin-desktop bg-surface relative overflow-hidden">
+        <div class="max-w-5xl mx-auto">
+          <div class="relative bg-gradient-to-b from-[#fff8f6] to-[#fdf3ee] rounded-3xl p-8 sm:p-12 md:p-16 border-2 border-dashed border-[#c87573]/30 shadow-[0_12px_40px_rgba(142,70,70,0.06),0_2px_12px_rgba(41,23,18,0.04)] overflow-hidden">
+            <svg class="absolute inset-0 w-full h-full pointer-events-none z-0" preserveaspectratio="none" viewbox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <lineargradient id="yarnGrad1" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#c87573" stop-opacity="0.18"></stop>
+                  <stop offset="50%" stop-color="#8e4646" stop-opacity="0.32"></stop>
+                  <stop offset="100%" stop-color="#8a9a86" stop-opacity="0.22"></stop>
+                </lineargradient>
+                <lineargradient id="yarnGrad2" x1="100%" x2="0%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#d48a88" stop-opacity="0.25"></stop>
+                  <stop offset="60%" stop-color="#c87573" stop-opacity="0.3"></stop>
+                  <stop offset="100%" stop-color="#ebd1c8" stop-opacity="0.15"></stop>
+                </lineargradient>
+              </defs>
+              <circle cx="100" cy="110" fill="none" r="70" stroke="#c87573" stroke-dasharray="3, 4" stroke-opacity="0.35" stroke-width="1.2"></circle>
+              <circle cx="800" cy="370" fill="none" r="85" stroke="#8a9a86" stroke-dasharray="4, 5" stroke-opacity="0.3" stroke-width="1.2"></circle>
+              <path class="thread-dash-flow" d="M -30,220 C 140,120 210,340 380,240 C 490,175 420,380 450,420" fill="none" stroke="url(#yarnGrad1)" stroke-width="2.5"></path>
+              <path class="thread-dash-flow" d="M 940,260 C 780,180 730,360 550,260 C 460,210 450,320 450,420" fill="none" stroke="url(#yarnGrad2)" stroke-width="2"></path>
+            </svg>
+            <div class="absolute -top-4 -left-4 sm:top-6 sm:left-6 w-28 h-28 sm:w-36 sm:h-36 pointer-events-none z-10 animate-float-slow opacity-85">
+              <svg class="w-full h-full filter drop-shadow-sm" fill="none" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(60, 60)">
+                  <path d="M 0,-10 C -12,-32 12,-32 0,-10 Z" fill="#c87573" fill-opacity="0.45" stroke="#b35e5d" stroke-width="1.5"></path>
+                  <path d="M 9.5,-3.1 C 31,-16 38,7 9.5,-3.1 Z" fill="#c87573" fill-opacity="0.4" stroke="#b35e5d" stroke-width="1.5"></path>
+                  <path d="M 5.9,8.1 C 18,29 -5,35 5.9,8.1 Z" fill="#c87573" fill-opacity="0.45" stroke="#b35e5d" stroke-width="1.5"></path>
+                  <path d="M -5.9,8.1 C -18,29 -32,10 -5.9,8.1 Z" fill="#c87573" fill-opacity="0.4" stroke="#b35e5d" stroke-width="1.5"></path>
+                  <path d="M -9.5,-3.1 C -31,-16 -24,-34 -9.5,-3.1 Z" fill="#c87573" fill-opacity="0.45" stroke="#b35e5d" stroke-width="1.5"></path>
+                  <circle cx="0" cy="0" fill="#fedbd2" r="10" stroke="#b35e5d" stroke-width="1.5"></circle>
+                  <circle cx="0" cy="0" fill="#c87573" r="5"></circle>
+                  <path d="M -15,12 C -32,25 -28,42 -12,32 C -5,27 -10,18 -15,12 Z" fill="#8a9a86" fill-opacity="0.5" stroke="#466641" stroke-width="1.2"></path>
+                </g>
+                <g transform="translate(112, 110)">
+                  <circle cx="0" cy="0" fill="#f5d2ca" r="16" stroke="#c87573" stroke-width="1.5"></circle>
+                  <path d="M -12,-8 C -2,-14 10,-8 12,-2 C 14,5 2,12 -8,10" fill="none" stroke="#b35e5d" stroke-linecap="round" stroke-width="1.5"></path>
+                  <path d="M -8,-12 C 4,-6 10,4 6,12" fill="none" stroke="#b35e5d" stroke-linecap="round" stroke-width="1.2"></path>
+                  <path d="M -14,2 C -6,6 4,14 10,6" fill="none" stroke="#c87573" stroke-linecap="round" stroke-width="1.2"></path>
+                  <path d="M 12,8 C 22,20 8,32 16,42" fill="none" stroke="#c87573" stroke-dasharray="3, 2" stroke-width="1.3"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="absolute -bottom-6 -right-6 sm:bottom-6 sm:right-6 w-28 h-28 sm:w-36 sm:h-36 pointer-events-none z-10 animate-float-slow-alt opacity-80">
+              <svg class="w-full h-full filter drop-shadow-sm" fill="none" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(85, 80)">
+                  <path d="M -30,45 C -20,20 -10,-5 5,-20" fill="none" stroke="#8a9a86" stroke-linecap="round" stroke-width="2"></path>
+                  <path d="M -18,22 C -32,18 -34,6 -20,12 Z" fill="#8a9a86" fill-opacity="0.45" stroke="#466641" stroke-width="1.2"></path>
+                  <path d="M -6,2 C 10,-4 14,-16 -2,-10 Z" fill="#8a9a86" fill-opacity="0.45" stroke="#466641" stroke-width="1.2"></path>
+                  <g transform="translate(6, -22)">
+                    <path d="M 0,-8 C -8,-24 8,-24 0,-8 Z" fill="#f0bd8b" fill-opacity="0.55" stroke="#966c41" stroke-width="1.3"></path>
+                    <path d="M 7.6,-2.5 C 24,-12 28,6 7.6,-2.5 Z" fill="#f0bd8b" fill-opacity="0.5" stroke="#966c41" stroke-width="1.3"></path>
+                    <path d="M 4.7,6.5 C 14,22 -4,26 4.7,6.5 Z" fill="#f0bd8b" fill-opacity="0.55" stroke="#966c41" stroke-width="1.3"></path>
+                    <path d="M -4.7,6.5 C -14,22 -24,8 -4.7,6.5 Z" fill="#f0bd8b" fill-opacity="0.5" stroke="#966c41" stroke-width="1.3"></path>
+                    <path d="M -7.6,-2.5 C -24,-12 -18,-26 -7.6,-2.5 Z" fill="#f0bd8b" fill-opacity="0.55" stroke="#966c41" stroke-width="1.3"></path>
+                    <circle cx="0" cy="0" fill="#ffe9e4" r="7" stroke="#966c41" stroke-width="1.2"></circle>
+                    <circle cx="0" cy="0" fill="#b35e5d" r="3"></circle>
+                  </g>
+                </g>
+                <g transform="translate(40, 42)">
+                  <circle cx="0" cy="0" fill="none" r="12" stroke="#c87573" stroke-dasharray="2, 3" stroke-width="1"></circle>
+                  <circle cx="0" cy="0" fill="#c87573" fill-opacity="0.6" r="3"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="relative z-20 max-w-2xl mx-auto flex flex-col items-center text-center space-y-space-md">
+              <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface/90 backdrop-blur-sm border border-[#c87573]/30 shadow-sm text-primary">
+                <svg class="w-3.5 h-3.5 text-primary" fill="currentColor" viewbox="0 0 24 24">
+                  <path d="M12 2a3 3 0 0 0-3 3c0 .38.07.74.2 1.07A4.98 4.98 0 0 0 6 8a5 5 0 0 0 0 4.14A4.98 4.98 0 0 0 4 16a4 4 0 0 0 4 4c1.1 0 2.09-.45 2.8-1.18A4.98 4.98 0 0 0 12 20a5 5 0 0 0 4-2c.71.73 1.7 1.18 2.8 1.18a4 4 0 0 0 4-4 4.98 4.98 0 0 0-2-3.86A5 5 0 0 0 20 8a4.98 4.98 0 0 0-3.2-1.93c.13-.33.2-.69.2-1.07a3 3 0 0 0-3-3c-.93 0-1.74.43-2.27 1.09A3 3 0 0 0 12 2zm0 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"></path>
+                </svg>
+                <span class="font-label-sm text-[11px] font-semibold tracking-widest uppercase text-[#3b2c28]/80">CONNECT WITH US</span>
+              </div>
+              <h2 class="font-headline-lg text-3xl sm:text-4xl md:text-5xl text-[#3b2c28] tracking-tight font-medium">More Magic on Instagram</h2>
+              <p class="font-body-md text-base sm:text-lg text-[#6e5953] max-w-xl leading-relaxed">See our latest crochet creations, new designs and little moments from Maa's Magic Crochet.</p>
+              <div class="pt-2 flex flex-col items-center">
+                <a class="group relative inline-flex items-center gap-3 px-8 sm:px-10 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#b35e5d] to-[#c87573] text-white font-label-lg text-sm sm:text-base font-medium shadow-[0_8px_20px_rgba(179,94,93,0.25)] hover:shadow-xl hover:shadow-[#c87573]/30 hover:-translate-y-1.5 transition-all duration-300 active:scale-95" href="https://instagram.com/ankyy_047" data-social="instagram" rel="noopener noreferrer" target="_blank">
+                  <svg class="w-5 h-5 fill-current text-white/95 group-hover:rotate-12 transition-transform duration-300" viewbox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                  </svg>
+                  <span>Follow us on Instagram</span>
+                  <span class="text-white/80 group-hover:translate-x-1.5 transition-transform duration-300 font-bold">→</span>
+                  <span class="absolute -top-2.5 -right-2.5 w-6 h-6 rounded-full bg-[#fedbd2] border border-[#c87573] flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:scale-110 group-hover:rotate-45 transition-all duration-300 shadow-sm">
+                    <svg class="w-3.5 h-3.5 text-[#b35e5d]" fill="currentColor" viewbox="0 0 20 20">
+                      <circle cx="10" cy="10" fill="#8e4646" r="3"></circle>
+                      <circle cx="10" cy="5" r="2.5"></circle>
+                      <circle cx="15" cy="8" r="2.5"></circle>
+                      <circle cx="13" cy="14" r="2.5"></circle>
+                      <circle cx="7" cy="14" r="2.5"></circle>
+                      <circle cx="5" cy="8" r="2.5"></circle>
+                    </svg>
+                  </span>
+                </a>
+                <div class="mt-3 flex items-center justify-center gap-1.5 opacity-60">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c87573]"></span>
+                  <span class="w-8 h-[1px] bg-gradient-to-r from-[#c87573] to-transparent"></span>
+                  <span class="text-[11px] font-label-sm tracking-wider uppercase text-[#6e5953]">Handmade in Lohardaga</span>
+                  <span class="w-8 h-[1px] bg-gradient-to-l from-[#c87573] to-transparent"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#c87573]"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODAL: RICH PRODUCT DETAIL QUICK VIEW -->
+      <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 overflow-y-auto" id="productQuickViewModal" onclick="closeProductModalBackdrop(event)">
+        <div class="bg-surface w-full max-w-2xl rounded-3xl p-6 sm:p-8 shadow-2xl relative transform scale-95 transition-transform duration-300 flex flex-col space-y-space-md my-auto max-h-[92vh] overflow-y-auto" onclick="event.stopPropagation()">
+          <button aria-label="Close details" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors" onclick="closeProductModal()">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md items-start">
+            <div class="flex flex-col space-y-3">
+              <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container shadow-inner border border-outline-variant/30">
+                <img alt="Product Preview" class="w-full h-full object-cover transition-all duration-300" id="modalMainImage" src=""/>
+                <span class="absolute top-3 left-3 bg-surface/90 backdrop-blur-xs text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full shadow-xs" id="modalBadge">Bouquet</span>
+              </div>
+              <div class="flex items-center gap-2 overflow-x-auto pb-1" id="modalThumbnailsRow"></div>
+            </div>
+            <div class="flex flex-col space-y-3 justify-between h-full">
+              <div class="flex flex-col space-y-2">
+                <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Studio Spec Sheet</span>
+                <h3 class="font-headline-md text-headline-md text-on-surface leading-tight" id="modalProductName">Product Title</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed bg-surface-container-low p-3 rounded-xl" id="modalProductDescription">Handmade crochet detailing crafted with combed cotton yarn in Lohardaga.</p>
+                <div class="hidden flex-col space-y-1.5 pt-1" id="modalVariantsContainer">
+                  <span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Available Options</span>
+                  <div class="flex flex-wrap gap-1.5" id="modalVariantsList"></div>
+                </div>
+              </div>
+              <div class="flex flex-col space-y-3 pt-2 border-t border-outline-variant/40">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <span class="font-label-sm text-label-sm text-on-surface-variant block">Pricing</span>
+                    <span id="modalProductPrice" class="font-title-md text-title-md font-bold text-primary">Price on Request</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="font-label-sm text-label-sm text-on-surface-variant block">Craft Technique</span>
+                    <span class="font-label-md text-label-md text-secondary font-semibold">Hand-Crocheted</span>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-2 pt-1">
+                  <a class="w-full py-3 rounded-full bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md hover:bg-on-secondary-container transition-all transform active:scale-95" href="javascript:void(0)" id="modalWhatsAppBtn" target="_blank">
+                    <span class="material-symbols-outlined text-[18px]">chat</span>
+                    <span>Order on WhatsApp</span>
+                  </a>
+                  <button class="w-full py-2 rounded-full bg-surface-container hover:bg-surface-variant text-on-surface font-label-md text-label-md text-center transition-colors" onclick="closeProductModal()">Close Spec</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEDICATED CUSTOM ORDER SCREEN VIEW -->
+    <div id="custom-order-view" class="hidden flex-col w-full min-h-[calc(100vh-80px)] px-margin-mobile md:px-margin lg:px-margin-desktop py-space-lg md:py-space-xl max-w-4xl mx-auto">
+      <!-- Top Back Navigation & Eyebrow -->
+      <div class="flex items-center justify-between gap-space-sm mb-space-md">
+        <button onclick="showHomepageView()" class="group inline-flex items-center gap-2 text-sm font-label-md text-primary hover:text-on-primary-fixed-variant transition-colors bg-surface-container-low hover:bg-surface-container px-4 py-2 rounded-full border border-outline-variant/40 shadow-xs cursor-pointer">
+          <span class="material-symbols-outlined text-[18px] transform group-hover:-translate-x-1 transition-transform">arrow_back</span>
+          <span>Back to Collection</span>
+        </button>
+        <div class="flex items-center gap-2 text-xs tracking-[0.16em] uppercase text-[#4A3530] font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#8F3B39]"></span>
+          <span>LOHARDAGA STUDIO</span>
+        </div>
+      </div>
+
+      <!-- Custom Order Card Container -->
+      <div class="bg-surface-container-lowest border border-outline-variant/40 rounded-3xl p-6 sm:p-10 md:p-12 shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-primary-fixed-dim/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Header Content -->
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm mb-3 shadow-xs">
+            <span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+            <span>Bespoke Handcrafted Commissions</span>
+          </div>
+          <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-on-surface tracking-tight leading-tight mb-4">
+            Custom <span class="italic font-medium text-primary">Order</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Have a unique crochet vision, a favorite color palette, or a special personalized gift in mind? Describe what you'd like made below, and Maa &amp; daughter will hand-craft it specially for you in our Lohardaga Studio.
+          </p>
+        </div>
+
+        <!-- Custom Order Form -->
+        <form id="customOrderForm" onsubmit="submitCustomOrderForm(event)" class="space-y-6 max-w-2xl mx-auto">
+          <!-- Name Field -->
+          <div>
+            <label for="custom-name" class="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+              Name <span class="text-primary">*</span>
+            </label>
+            <input type="text" id="custom-name" required placeholder="Your full name" class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/60 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all font-body-md text-body-md">
+          </div>
+
+          <!-- Request Field -->
+          <div>
+            <label for="custom-request" class="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+              What would you like? <span class="text-primary">*</span>
+            </label>
+            <textarea id="custom-request" rows="3" required placeholder="Describe what you'd like us to create (e.g. Handmade rose bouquet, pastel hair scrunchie set, mini flower keychains, custom gajra...)" class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/60 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all font-body-md text-body-md"></textarea>
+          </div>
+
+          <!-- Preferred Colors Field -->
+          <div>
+            <label for="custom-colors" class="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+              Preferred colors
+            </label>
+            <input type="text" id="custom-colors" placeholder="e.g. Blush Pink &amp; Cream, Golden Sunflower, Crimson Red..." class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/60 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all font-body-md text-body-md">
+          </div>
+
+          <!-- Quantity Field -->
+          <div>
+            <label for="custom-quantity" class="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+              Quantity
+            </label>
+            <select id="custom-quantity" class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/60 text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all font-body-md text-body-md cursor-pointer">
+              <option value="1 piece">1 piece</option>
+              <option value="2 pieces">2 pieces</option>
+              <option value="3 pieces">3 pieces</option>
+              <option value="4 pieces">4 pieces</option>
+              <option value="5+ pieces (Bulk / Gift Set)">5+ pieces (Bulk / Gift Set)</option>
+            </select>
+          </div>
+
+          <!-- Additional Requirements Field -->
+          <div>
+            <label for="custom-requirements" class="block font-label-md text-label-md text-on-surface font-semibold mb-2">
+              Additional requirements
+            </label>
+            <textarea id="custom-requirements" rows="2" placeholder="e.g. Gift wrapping note, target delivery date, special size..." class="w-full px-4 py-3.5 rounded-2xl bg-surface-container-low border border-outline-variant/60 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all font-body-md text-body-md"></textarea>
+          </div>
+
+          <!-- Prominent Submit Button -->
+          <div class="pt-4">
+            <button type="submit" class="w-full py-4 px-8 rounded-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-semibold text-base sm:text-lg tracking-wide shadow-lg hover:shadow-xl transition-all transform active:scale-95 flex items-center justify-center gap-3 cursor-pointer">
+              <span class="material-symbols-outlined text-[22px]">chat</span>
+              <span>Send Custom Order on WhatsApp →</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Return Home Footer Link -->
+        <div class="text-center mt-8 pt-6 border-t border-outline-variant/30">
+          <button onclick="showHomepageView()" class="inline-flex items-center gap-2 text-sm font-label-md text-on-surface-variant hover:text-primary transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-[18px]">home</span>
+            <span>Return to Homepage &amp; Product Catalogue</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-surface-container-low text-on-surface" id="contact">
+    <div class="bg-surface-container py-space-sm px-margin-mobile md:px-margin-desktop">
+      <div class="w-full flex items-center justify-center text-center font-label-md text-label-md text-tertiary tracking-wider">Lohardaga Studio</div>
+    </div>
+    <div class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg mb-space-xl">
+        <div class="lg:col-span-4 flex flex-col gap-space-sm">
+          <div class="flex items-center gap-space-sm">
+            <span class="font-headline-md text-headline-md text-on-surface">Maa's Magic Crochet</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-md">Handmade crochet creations made with care. Thoughtfully crafted crochet pieces for gifting, decorating and everyday moments.</p>
+          <div class="flex items-center gap-space-sm mt-space-xs">
+            <div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">verified</span>Handmade with Care</div>
+            <div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">spa</span>Crafted with Yarn</div>
+          </div>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Explore the Studio</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="home" href="#" onclick="showHomepageView(); return false;">Home</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="shop" href="#shop" onclick="showHomepageView();">Shop</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="custom-orders" href="#custom-orders" onclick="showCustomOrderScreen(); return false;">Custom Orders</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="what-is-crochet" href="#what-is-crochet" onclick="showHomepageView();">What is Crochet?</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="care-guide" href="#what-is-crochet" onclick="showHomepageView();">Care &amp; Guide</a>
+          </nav>
+        </div>
+        <div class="lg:col-span-2 flex flex-col gap-space-xs">
+          <span class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Heartfelt Notes</span>
+          <nav class="flex flex-col gap-space-xs">
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="about" href="#why-handmade" onclick="showHomepageView();">About Us</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="custom-orders-info" href="#custom-orders" onclick="showCustomOrderScreen(); return false;">Custom Orders Info</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer" data-path="care-guide" href="#what-is-crochet" onclick="showHomepageView();">Crochet Care Guide</a>
+          </nav>
+        </div>
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Connect &amp; Commission</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Have a custom vision, color scheme, or a keepsake request? Talk directly with Maa &amp; Daughter on WhatsApp.</p>
+          <div class="flex flex-col gap-space-xs">
+            <div class="font-label-md text-label-md text-on-surface font-semibold">Lohardaga Studio</div>
+            <a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-on-secondary-fixed transition-colors" href="javascript:void(0)" onclick="triggerWhatsApp('Hello Maa’s Magic Crochet! I would like to chat about a crochet commission.')">
+              <span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+              <span>Chat directly with us on WhatsApp</span>
+            </a>
+            <a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary hover:text-on-primary-fixed-variant transition-colors" href="https://instagram.com/ankyy_047" data-social="instagram" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-[18px]">photo_camera</span>
+              <span>Connect on Instagram</span>
+            </a>
+          </div>
+          <div class="flex items-center gap-space-xs pt-space-xs">
+            <a aria-label="Instagram Gallery" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" href="https://instagram.com/ankyy_047" data-social="instagram" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+            <a aria-label="Pinterest Moodboards" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" href="javascript:void(0)" onclick="triggerWhatsApp('Hello Maa’s Magic Crochet! Inquiry for moodboard and patterns.')"><span class="material-symbols-outlined text-[18px]">palette</span></a>
+            <a aria-label="Email Studio" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors" href="mailto:hello@maasmagiccrochet.com"><span class="material-symbols-outlined text-[18px]">mail</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+        <p>© 2025 Maa's Magic Crochet. All rights reserved.</p>
+        <div class="flex items-center gap-space-md">
+          <a class="hover:text-on-surface transition-colors cursor-pointer" href="#why-handmade" onclick="showHomepageView();">About Studio</a>
+          <a class="hover:text-on-surface transition-colors cursor-pointer" href="#custom-orders" onclick="showCustomOrderScreen(); return false;">Custom Orders</a>
+          <a class="hover:text-on-surface transition-colors cursor-pointer" href="#contact" onclick="showHomepageView();">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       3. CLIENT-SIDE PRODUCT DATA & CATALOG INTERACTION LOGIC
+       ======================================================== -->
+  <script>
+    const studioProducts = [
+      {
+        id: "single-red-rose",
+        name: "Handmade Single Red Rose Bouquet",
+        category: "Bouquets",
+        categoryBadge: "Bouquet",
+        price: "Price on Request",
+        description: "Handcrafted single red crochet rose in boutique paper wrapping with satin ribbon bow.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_single_red_rose_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "mixed-trio-bouquet",
+        name: "Mixed Trio Crochet Bouquet",
+        category: "Bouquets",
+        categoryBadge: "Bouquet",
+        price: "Price on Request",
+        description: "Handmade bouquet collection featuring red rose, white blossom, and pink tulip with elegant wraps.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_red_yellow_mixed_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "rose-lily-bouquet",
+        name: "Handmade Rose & Lily Bouquet",
+        category: "Bouquets",
+        categoryBadge: "Bouquet",
+        price: "Price on Request",
+        description: "Handmade dual red crochet roses paired with a blooming lily in handcrafted paper cone.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_red_rose_pair_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "pink-tulip-white-rose",
+        name: "Pink Tulip & White Rose Bouquet",
+        category: "Bouquets",
+        categoryBadge: "Bouquet",
+        price: "Price on Request",
+        description: "Delicate pink crochet tulip and white rose bouquet tied with a shimmering gold bow.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_pink_white_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "pink-lily-red-rose-mini",
+        name: "Pink Lily & Red Rose Mini Bouquet",
+        category: "Bouquets",
+        categoryBadge: "Bouquet",
+        price: "Price on Request",
+        description: "Charming mini floral bouquet featuring a star lily bloom and crimson rose accent.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/bouquet_pink_red_mini_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "crochet-sunflower",
+        name: "Handmade Crochet Sunflower",
+        category: "Crochet Flowers",
+        categoryBadge: "Flower",
+        price: "Price on Request",
+        description: "Vibrant golden sunflower hand-crocheted with rich chocolate center and green leaf detail.",
+        images: [
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_sunflower_01.jpg/screen.png",
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_sunflower_02.jpg/screen.png",
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_sunflower_03.jpg/screen.png"
+        ],
+        variants: ["Classic Golden Bloom", "Leaf Accent Stem"]
+      },
+      {
+        id: "red-floral-bloom-set",
+        name: "Red Floral Bloom Set",
+        category: "Crochet Flowers",
+        categoryBadge: "Flower",
+        price: "Price on Request",
+        description: "Artisanal set of hand-crocheted red tulips and open blossom petals on flexible green stems.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/flower_red_floral_set_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "crochet-bow-clip",
+        name: "Crochet Bow Hair Clip / Tie",
+        category: "Hair Accessories",
+        categoryBadge: "Hair Accessory",
+        price: "Price on Request",
+        description: "Hand-knitted elegant crochet bow featuring delicate faux-pearl bead centerpiece.",
+        images: [
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/bow_red_01.jpg/screen.png",
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/bow_yellow_01.jpg/screen.png"
+        ],
+        variants: ["Crimson Red", "Sunflower Yellow"]
+      },
+      {
+        id: "ruffled-crochet-scrunchie",
+        name: "Ruffled Crochet Hair Scrunchie",
+        category: "Hair Accessories",
+        categoryBadge: "Hair Accessory",
+        price: "Price on Request",
+        description: "Soft, voluminous hand-crocheted hair scrunchie with delicate scalloped contrast edging.",
+        images: [
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/scrunchie_flower_pink_white_01.jpg/screen.png",
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/scrunchie_flower_purple_01.jpg/screen.png",
+          "./stitch_maa_s_magic_crochet_boutique_ui_ux/scrunchie_flower_multicolor_01.jpg/screen.png"
+        ],
+        variants: ["Pastel Pink", "Royal Purple", "Berry Maroon", "Sky Blue"]
+      },
+      {
+        id: "mini-bouquet-keychain",
+        name: "Handmade Crochet Mini Bouquet Keychain",
+        category: "Keychains",
+        categoryBadge: "Keychain",
+        price: "Price on Request",
+        description: "Charming mini bouquet keychains handcrafted with mini tulip, daisy, and sunflower stems with secure split ring.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/keychain_mini_flower_set_01.jpg/screen.png"],
+        variants: ["Pink Tulip", "White Daisy", "Golden Sunflower"]
+      },
+      {
+        id: "crochet-floral-gajra",
+        name: "Crochet Floral Gajra",
+        category: "Gajra",
+        categoryBadge: "Gajra",
+        price: "Price on Request",
+        description: "A handmade crochet floral gajra, thoughtfully crafted as a beautiful and reusable hair accessory with green tie cords.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/gajra_white_pink_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "crochet-floral-decor",
+        name: "Crochet Floral Decor",
+        category: "Decor",
+        categoryBadge: "Decor",
+        price: "Price on Request",
+        description: "A handmade crochet floral piece designed to add a warm and charming handmade touch to your space with hanging green vine bow and dual pink bells.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/decor_hanging_pink_flowers_01.jpg/screen.png"],
+        variants: null
+      },
+      {
+        id: "crochet-notebook-cover",
+        name: "Crochet Notebook Cover",
+        category: "Stationery",
+        categoryBadge: "Stationery",
+        price: "Price on Request",
+        description: "A handmade crochet cover designed to add a charming, personal touch to an everyday notebook featuring turquoise weave, daisy granny square, and purple button.",
+        images: ["./stitch_maa_s_magic_crochet_boutique_ui_ux/notebook_crochet_cover_01.jpg/screen.png"],
+        variants: null
+      }
+    ];
+    // WhatsApp order actions & triggers are handled via centralized CONTACT_CONFIG and triggerWhatsApp() above.
+
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      const toastTitle = document.getElementById('toastTitle');
+      const toastMessage = document.getElementById('toastMessage');
+      
+      if (toast && toastTitle && toastMessage) {
+        toastTitle.textContent = title;
+        toastMessage.textContent = message;
+        toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+        }, 3000);
+      }
+    }
+
+    function openProductByIndex(index) {
+      const product = studioProducts[index];
+      if (!product) return;
+
+      const modal = document.getElementById('productQuickViewModal');
+      const mainImg = document.getElementById('modalMainImage');
+      const badge = document.getElementById('modalBadge');
+      const name = document.getElementById('modalProductName');
+      const desc = document.getElementById('modalProductDescription');
+      const thumbsRow = document.getElementById('modalThumbnailsRow');
+      const variantsContainer = document.getElementById('modalVariantsContainer');
+      const variantsList = document.getElementById('modalVariantsList');
+      const whatsappBtn = document.getElementById('modalWhatsAppBtn');
+      const priceEl = document.getElementById('modalProductPrice');
+
+      name.textContent = product.name;
+      desc.textContent = product.description;
+      badge.textContent = product.categoryBadge || product.category;
+      if (priceEl) {
+        priceEl.textContent = product.price || "Price on Request";
+      }
+      mainImg.src = product.images[0];
+      mainImg.alt = product.name;
+
+      thumbsRow.innerHTML = '';
+      if (product.images.length > 1) {
+        thumbsRow.classList.remove('hidden');
+        product.images.forEach((imgUrl, i) => {
+          const thumbBtn = document.createElement('button');
+          thumbBtn.className = `w-12 h-12 rounded-lg overflow-hidden border-2 transition-all shrink-0 ${i === 0 ? 'border-primary ring-2 ring-primary/30' : 'border-transparent opacity-70 hover:opacity-100'}`;
+          thumbBtn.innerHTML = `<img src="${imgUrl}" class="w-full h-full object-cover" alt="View ${i+1}" />`;
+          thumbBtn.onclick = function() {
+            mainImg.src = imgUrl;
+            Array.from(thumbsRow.children).forEach(b => {
+              b.className = 'w-12 h-12 rounded-lg overflow-hidden border-2 transition-all shrink-0 border-transparent opacity-70 hover:opacity-100';
+            });
+            thumbBtn.className = 'w-12 h-12 rounded-lg overflow-hidden border-2 transition-all shrink-0 border-primary ring-2 ring-primary/30 opacity-100';
+          };
+          thumbsRow.appendChild(thumbBtn);
+        });
+      } else {
+        thumbsRow.classList.add('hidden');
+      }
+
+      variantsList.innerHTML = '';
+      if (product.variants && product.variants.length > 0) {
+        variantsContainer.classList.remove('hidden');
+        product.variants.forEach(variant => {
+          const pill = document.createElement('span');
+          pill.className = 'px-2.5 py-1 rounded-full text-xs font-label-sm bg-surface-container border border-outline-variant/40 text-on-surface';
+          pill.textContent = variant;
+          variantsList.appendChild(pill);
+        });
+      } else {
+        variantsContainer.classList.add('hidden');
+      }
+
+      const messageText = `Hello Maa’s Magic Crochet! I’m interested in ordering: ${product.name}. Please share the price and availability.`;
+      const encodedUrl = getWhatsAppUrl(messageText);
+      whatsappBtn.href = encodedUrl;
+      whatsappBtn.onclick = function(e) {
+        e.preventDefault();
+        triggerWhatsApp(messageText);
+      };
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      modal.firstElementChild.classList.remove('scale-95');
+      modal.firstElementChild.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('productQuickViewModal');
+      if (modal) {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        modal.classList.remove('opacity-100');
+        modal.firstElementChild.classList.add('scale-95');
+        modal.firstElementChild.classList.remove('scale-100');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function closeProductModalBackdrop(event) {
+      if (event.target.id === 'productQuickViewModal') {
+        closeProductModal();
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeProductModal();
+    });
+
+    /* Track whether 'All' products are expanded */
+    let allProductsExpanded = false;
+    const ALL_INITIAL_LIMIT = 5;
+
+    function filterShopCategory(category) {
+      const pills = document.querySelectorAll('.category-pill');
+      pills.forEach(pill => {
+        const cat = pill.getAttribute('data-category');
+        if (cat === category) {
+          pill.className = 'category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary';
+        } else {
+          pill.className = 'category-pill whitespace-nowrap px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-surface hover:bg-surface-variant text-on-surface';
+        }
+      });
+
+      const cards = document.querySelectorAll('.product-catalog-card');
+      const toggleContainer = document.getElementById('viewAllToggleContainer');
+
+      if (category === 'all') {
+        /* Reset expansion state when switching back to All */
+        allProductsExpanded = false;
+        updateViewAllButton();
+
+        let visibleIndex = 0;
+        cards.forEach(card => {
+          card.classList.remove('hidden');
+          if (visibleIndex >= ALL_INITIAL_LIMIT) {
+            card.classList.add('hidden');
+          }
+          visibleIndex++;
+        });
+
+        /* Show toggle only if there are more than 5 products */
+        if (toggleContainer) {
+          toggleContainer.style.display = cards.length > ALL_INITIAL_LIMIT ? 'flex' : 'none';
+        }
+      } else {
+        /* Specific category: show all matching, hide toggle */
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (cardCat === category) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+        if (toggleContainer) {
+          toggleContainer.style.display = 'none';
+        }
+      }
+    }
+
+    function toggleViewAll() {
+      allProductsExpanded = !allProductsExpanded;
+      const cards = document.querySelectorAll('.product-catalog-card');
+
+      if (allProductsExpanded) {
+        /* Show all products */
+        cards.forEach(card => card.classList.remove('hidden'));
+      } else {
+        /* Collapse back to first 5 */
+        let index = 0;
+        cards.forEach(card => {
+          if (index >= ALL_INITIAL_LIMIT) {
+            card.classList.add('hidden');
+          } else {
+            card.classList.remove('hidden');
+          }
+          index++;
+        });
+
+        /* Scroll back to the shop section */
+        const shopSection = document.getElementById('shop');
+        if (shopSection) {
+          const headerOffset = 80;
+          const elementPosition = shopSection.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }
+
+      updateViewAllButton();
+    }
+
+    function updateViewAllButton() {
+      const textEl = document.getElementById('viewAllToggleText');
+      const arrowEl = document.getElementById('viewAllToggleArrow');
+      if (textEl && arrowEl) {
+        if (allProductsExpanded) {
+          textEl.textContent = 'Show Less';
+          arrowEl.textContent = '↑';
+          arrowEl.style.transform = 'rotate(0deg)';
+        } else {
+          textEl.textContent = 'View All Products';
+          arrowEl.textContent = '↓';
+          arrowEl.style.transform = 'rotate(0deg)';
+        }
+      }
+    }
+
+    function triggerCategoryFilter(category) {
+      filterShopCategory(category);
+      showToast(`Showing ${category}`, `Filtered to ${category} collection.`);
+      
+      const targetSection = document.getElementById('shop');
+      if (targetSection) {
+        const headerOffset = 80;
+        const elementPosition = targetSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    function showCustomOrderScreen(updateHash = true) {
+      const intro = document.getElementById('intro-screen');
+      if (intro && intro.style.display !== 'none') {
+        intro.classList.add('intro-exit');
+        setTimeout(() => {
+          intro.style.display = 'none';
+          document.body.classList.remove('overflow-hidden', 'select-none');
+          document.body.style.overflow = '';
+        }, 850);
+      }
+
+      const homepageView = document.getElementById('homepage-view');
+      const customOrderView = document.getElementById('custom-order-view');
+      
+      if (homepageView && customOrderView) {
+        homepageView.classList.add('hidden');
+        customOrderView.classList.remove('hidden');
+        customOrderView.classList.add('flex');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      if (updateHash && window.location.hash !== '#custom-orders') {
+        if (history.pushState) {
+          history.pushState(null, '', '#custom-orders');
+        } else {
+          window.location.hash = '#custom-orders';
+        }
+      }
+    }
+
+    function showHomepageView(updateHash = true) {
+      const intro = document.getElementById('intro-screen');
+      if (intro && intro.style.display !== 'none') {
+        intro.classList.add('intro-exit');
+        setTimeout(() => {
+          intro.style.display = 'none';
+          document.body.classList.remove('overflow-hidden', 'select-none');
+          document.body.style.overflow = '';
+        }, 850);
+      }
+
+      const homepageView = document.getElementById('homepage-view');
+      const customOrderView = document.getElementById('custom-order-view');
+      
+      if (homepageView && customOrderView) {
+        customOrderView.classList.add('hidden');
+        customOrderView.classList.remove('flex');
+        homepageView.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      if (updateHash && window.location.hash === '#custom-orders') {
+        if (history.pushState) {
+          history.pushState(null, '', window.location.pathname + window.location.search);
+        } else {
+          window.location.hash = '';
+        }
+      }
+    }
+
+    function openCustomOrderFromIntro() {
+      showCustomOrderScreen(true);
+    }
+
+    function submitCustomOrderForm(event) {
+      if (event) event.preventDefault();
+      
+      const name = document.getElementById('custom-name')?.value.trim() || '';
+      const request = document.getElementById('custom-request')?.value.trim() || '';
+      const colors = document.getElementById('custom-colors')?.value.trim() || 'As shown / Artisan choice';
+      const quantity = document.getElementById('custom-quantity')?.value.trim() || '1 piece';
+      const requirements = document.getElementById('custom-requirements')?.value.trim() || 'None';
+
+      if (!name || !request) {
+        showToast("Missing Information", "Please enter your name and what you would like created.");
+        return;
+      }
+
+      const message = `Hello Maa’s Magic Crochet!\n\n` +
+        `I’d like to request a custom order.\n\n` +
+        `Name: ${name}\n` +
+        `What I would like: ${request}\n` +
+        `Preferred colors: ${colors}\n` +
+        `Quantity: ${quantity}\n` +
+        `Additional requirements: ${requirements}\n\n` +
+        `Please let me know the price and availability.`;
+
+      triggerWhatsApp(message);
+    }
+
+    // Sync view with hash on popstate and hashchange for smooth browser back/forward navigation
+    function syncViewWithHash() {
+      if (window.location.hash === '#custom-orders') {
+        showCustomOrderScreen(false);
+      } else {
+        const customOrderView = document.getElementById('custom-order-view');
+        if (customOrderView && !customOrderView.classList.contains('hidden')) {
+          showHomepageView(false);
+        }
+      }
+    }
+
+    window.addEventListener('popstate', syncViewWithHash);
+    window.addEventListener('hashchange', syncViewWithHash);
+    window.addEventListener('DOMContentLoaded', () => {
+      applyContactConfig();
+      if (window.location.hash === '#custom-orders') {
+        showCustomOrderScreen(false);
+      }
+      /* Apply initial 5-product limit for "All" category on page load */
+      filterShopCategory('all');
+    });
+  </script>
+</body>
+</html>
